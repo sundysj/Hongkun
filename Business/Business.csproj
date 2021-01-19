@@ -1,0 +1,611 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{60FC330A-B51A-49C8-BE33-A5B9BA9C53AE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Business</RootNamespace>
+    <AssemblyName>Business</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>bin\Debug\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+    <LangVersion>7.1</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>bin\Release\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="AliyunSMS.cs" />
+    <Compile Include="ApiPageResult.cs" />
+    <Compile Include="App桌面\ERPMessageModel.cs" />
+    <Compile Include="BaseGetData.cs" />
+    <Compile Include="ApiResult.cs" />
+    <Compile Include="BoolConverter.cs" />
+    <Compile Include="Connection.cs" />
+    <Compile Include="ConnectionDb.cs" />
+    <Compile Include="HttpHelper.cs" />
+    <Compile Include="JSON.cs" />
+    <Compile Include="OaWorkModel.cs" />
+    <Compile Include="PMS10\PMSAppDownload.cs" />
+    <Compile Include="PMS10\业主App\公告\PMSAppNotice.cs" />
+    <Compile Include="PMS10\业主App\商城\Model\PMSAppGoodsCategoryModel.cs" />
+    <Compile Include="PMS10\业主App\商城\Model\PMSAppGoodsSimpleModel.cs" />
+    <Compile Include="PMS10\业主App\商城\PMSAppBizAroundStoreCommon.cs" />
+    <Compile Include="PMS10\业主App\商城\PMSAppBizCommon.cs" />
+    <Compile Include="PMS10\业主App\商城\PMSAppBizPayChannel.cs" />
+    <Compile Include="PMS10\业主App\商城\PMSAppBizPropertyStoreCommon.cs" />
+    <Compile Include="PMS10\业主App\商城\PMSAppConfigSetting.cs" />
+    <Compile Include="PMS10\业主App\商城\PMSAppUserAddress.cs" />
+    <Compile Include="PMS10\业主App\建议\PMSAppCommunitySuggestion.cs" />
+    <Compile Include="PMS10\业主App\房产\Model\Tb_Control_AppBindingRoom.cs" />
+    <Compile Include="PMS10\业主App\房产\PMSAppRoomManage.cs" />
+    <Compile Include="PMS10\业主App\报事\PMSAppIncidentAcceptManage.cs" />
+    <Compile Include="PMS10\业主App\拜访\PMSAppVisit.cs" />
+    <Compile Include="PMS10\业主App\服务\PMSCommunityService.cs" />
+    <Compile Include="PMS10\业主App\注册\PMSAppRegister.cs" />
+    <Compile Include="PMS10\业主App\管家\PMSAppHousekeeper.cs" />
+    <Compile Include="PMS10\业主App\缴费\Enum\PMSAppFeesSelectionMode.cs" />
+    <Compile Include="PMS10\业主App\缴费\Model\PMSAppFeesCostSimpleModel.cs" />
+    <Compile Include="PMS10\业主App\缴费\Model\PMSAppFeesCostSimpleModelV2.cs" />
+    <Compile Include="PMS10\业主App\缴费\Model\PMSAppFeesSimpleModel.cs" />
+    <Compile Include="PMS10\业主App\缴费\Model\PMSAppFeesSimpleModelV2.cs" />
+    <Compile Include="PMS10\业主App\缴费\Model\PMSAppPaymentBindingControl.cs" />
+    <Compile Include="PMS10\业主App\缴费\Model\Tb_HSPR_PaymentBind.cs" />
+    <Compile Include="PMS10\业主App\缴费\Model\Tb_HSPR_PaymentBindingDateModelSet.cs" />
+    <Compile Include="PMS10\业主App\缴费\PMSAppFees.cs" />
+    <Compile Include="PMS10\业主App\缴费\PMSAppPay.cs" />
+    <Compile Include="PMS10\业主App\缴费\PMSAppPayChannel.cs" />
+    <Compile Include="PMS10\业主App\缴费\v2\PMSAppFeesV2.cs" />
+    <Compile Include="PMS10\业主App\缴费\全民付\PMSFeesUnionQmfManage.cs" />
+    <Compile Include="PMS10\业主App\缴费\通联\PMSFeesAllinpayManage.cs" />
+    <Compile Include="PMS10\业主App\车位\PMSAppParkingManage.cs" />
+    <Compile Include="PMS10\业主App\运费\PMSFreight.cs" />
+    <Compile Include="PMS10\业主App\退货\PMSSalesReturn.cs" />
+    <Compile Include="PMS10\业主App\首页\PMSAppHomepage.cs" />
+    <Compile Include="PMS10\商家App\KdApiSearchMonitor.cs" />
+    <Compile Include="PMS10\物管App\OA\PMSWorkTo.cs" />
+    <Compile Include="PMS10\物管App\PMSUserAuthentication.cs" />
+    <Compile Include="PMS10\物管App\人员出入\Models\PMSIOMAdditionalInfoModel.cs" />
+    <Compile Include="PMS10\物管App\人员出入\Models\PMSIOMAdditionalInfoOptionModel.cs" />
+    <Compile Include="PMS10\物管App\人员出入\Models\PMSIOMInOutRecordControl.cs" />
+    <Compile Include="PMS10\物管App\人员出入\PMSPersonInOutManage.cs" />
+    <Compile Include="PMS10\物管App\员工\PMSUserIdentity.cs" />
+    <Compile Include="PMS10\物管App\员工\PMSUserManage.cs" />
+    <Compile Include="PMS10\物管App\品质督察\PMSSupervisionManage.cs" />
+    <Compile Include="PMS10\物管App\客户\PMSCustomerInfo.cs" />
+    <Compile Include="PMS10\物管App\工作日志\PMSWorkLogManage.cs" />
+    <Compile Include="PMS10\物管App\房产\PMSRoomManage.cs" />
+    <Compile Include="PMS10\物管App\打卡\PMSAppClockManage.cs" />
+    <Compile Include="PMS10\物管App\报事\Enum\PMSImageSourceMode.cs" />
+    <Compile Include="PMS10\物管App\报事\Enum\PMSIncidentAction.cs" />
+    <Compile Include="PMS10\物管App\报事\Enum\PMSIncidentFlowType.cs" />
+    <Compile Include="PMS10\物管App\报事\Enum\PMSIncidentPhase.cs" />
+    <Compile Include="PMS10\物管App\报事\Enum\PMSIncidentPlace.cs" />
+    <Compile Include="PMS10\物管App\报事\Enum\PMSIncidentPushAudienceType.cs" />
+    <Compile Include="PMS10\物管App\报事\Enum\PMSIncidentSource.cs" />
+    <Compile Include="PMS10\物管App\报事\Enum\PMSUserOnlineStatus.cs" />
+    <Compile Include="PMS10\物管App\报事\Models\PMSIncidentAcceptModel.cs" />
+    <Compile Include="PMS10\物管App\报事\Models\PMSIncidentFlowAuditSimpleInfo.cs" />
+    <Compile Include="PMS10\物管App\报事\Models\PMSIncidentLifeCycle.cs" />
+    <Compile Include="PMS10\物管App\报事\Models\PMSIncidentSelUserModel.cs" />
+    <Compile Include="PMS10\物管App\报事\Models\Tb_HSPR_IncidentControlSet.cs" />
+    <Compile Include="PMS10\物管App\报事\Models\Tb_HSPR_IncidentPushSetting.cs" />
+    <Compile Include="PMS10\物管App\报事\Models\Tb_System_CorpAppPushSet.cs" />
+    <Compile Include="PMS10\物管App\报事\PMSIncidentAccept.cs" />
+    <Compile Include="PMS10\物管App\报事\PMSIncidentAccept_Action.cs" />
+    <Compile Include="PMS10\物管App\报事\PMSIncidentAccept_Filter.cs" />
+    <Compile Include="PMS10\物管App\报事\PMSIncidentAccept_Flow.cs" />
+    <Compile Include="PMS10\物管App\报事\PMSIncidentAccept_Info.cs" />
+    <Compile Include="PMS10\物管App\报事\PMSIncidentAccept_Object.cs" />
+    <Compile Include="PMS10\物管App\报事\PMSIncidentAccept_XingHe.cs" />
+    <Compile Include="PMS10\物管App\报事\PMSIncidentPush.cs" />
+    <Compile Include="PMS10\物管App\报事\PMSIncidentPush_Audience.cs" />
+    <Compile Include="PMS10\物管App\报事\PMSIncidentPush_Control.cs" />
+    <Compile Include="PMS10\物管App\桌面\Models\AppModules\AppModule.cs" />
+    <Compile Include="PMS10\物管App\桌面\Models\AppModules\AppSubmodule.cs" />
+    <Compile Include="PMS10\物管App\桌面\Models\AppModules\AppWebModule.cs" />
+    <Compile Include="PMS10\物管App\桌面\Models\AppModules\IModule.cs" />
+    <Compile Include="PMS10\物管App\桌面\PMS10AppDesktop.cs" />
+    <Compile Include="PMS10\物管App\桌面\PMS10AppDesktop_Badge.cs" />
+    <Compile Include="PMS10\物管App\桌面\PMS10AppDesktop_Statistics.cs" />
+    <Compile Include="PMS10\物管App\费用\Models\PMSPaymentChannelModel.cs" />
+    <Compile Include="PMS10\物管App\费用\Models\PMSPaymentChannelString.cs" />
+    <Compile Include="PMS10\物管App\费用\Models\PMSPaymentMode.cs" />
+    <Compile Include="PMS10\物管App\费用\PMSFeesManage.cs" />
+    <Compile Include="PMS10\物管App\费用\PMSPaymentChannel.cs" />
+    <Compile Include="PMS10\物管App\部门\PMSDepartmentManage.cs" />
+    <Compile Include="PMS10\物管App\验房\PMSHouseInspectionManage.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="PubContext.cs" />
+    <Compile Include="PubInfo.cs" />
+    <Compile Include="SequentialGuid.cs" />
+    <Compile Include="SmsInfo.cs" />
+    <Compile Include="StringExtensions.cs" />
+    <Compile Include="TWBusinRule.cs" />
+    <Compile Include="VersionManage.cs" />
+    <Compile Include="WChat2020\HttpHelper.cs" />
+    <Compile Include="Web References\HK_webServiecReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\MJSMSApiService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="wftlib\ClientResponseHandler.cs" />
+    <Compile Include="wftlib\MD5Util.cs" />
+    <Compile Include="wftlib\PayHttpClient.cs" />
+    <Compile Include="wftlib\RequestHandler.cs" />
+    <Compile Include="wftlib\Utils.cs" />
+    <Compile Include="京东支付\DictionaryExtensionMethodClass.cs" />
+    <Compile Include="京东支付\JDPay.cs" />
+    <Compile Include="京东支付\PropertyUtil\HttpUtil.cs" />
+    <Compile Include="京东支付\PropertyUtil\PropertyUtils.cs" />
+    <Compile Include="京东支付\responseObj\AsynNotifyResponse.cs" />
+    <Compile Include="京东支付\responseObj\BillsInfo.cs" />
+    <Compile Include="京东支付\responseObj\BtStrategyResponse.cs" />
+    <Compile Include="京东支付\responseObj\CreateOrderResponse.cs" />
+    <Compile Include="京东支付\responseObj\FkmPayResponse.cs" />
+    <Compile Include="京东支付\responseObj\JdPayBaseResponse.cs" />
+    <Compile Include="京东支付\responseObj\JdPayResponse.cs" />
+    <Compile Include="京东支付\responseObj\PaymentTradeResponse.cs" />
+    <Compile Include="京东支付\responseObj\PayTradeDetail.cs" />
+    <Compile Include="京东支付\responseObj\PayTradeVo.cs" />
+    <Compile Include="京东支付\responseObj\QueryRefundNewResponse.cs" />
+    <Compile Include="京东支付\responseObj\QueryRefundResponse.cs" />
+    <Compile Include="京东支付\responseObj\RefundInfo.cs" />
+    <Compile Include="京东支付\responseObj\RefundResponse.cs" />
+    <Compile Include="京东支付\responseObj\Result.cs" />
+    <Compile Include="京东支付\responseObj\UserRelationResponse.cs" />
+    <Compile Include="京东支付\signature\Des3.cs" />
+    <Compile Include="京东支付\signature\RSACoder.cs" />
+    <Compile Include="京东支付\signature\SHAUtil.cs" />
+    <Compile Include="京东支付\signature\SignUtil.cs" />
+    <Compile Include="京东支付\signature\Win32.cs" />
+    <Compile Include="京东支付\signature\XMLUtil.cs" />
+    <Compile Include="人事管理\PersonnelManage.cs" />
+    <Compile Include="保利\RoomTreeSimpleModel.cs" />
+    <Compile Include="保利\VisitManage_bl.cs" />
+    <Compile Include="商家系统\BusinessCorp.cs" />
+    <Compile Include="商家系统\BussinessCommon.cs" />
+    <Compile Include="商家系统\CouponManage.cs" />
+    <Compile Include="商家系统\Orders.cs" />
+    <Compile Include="商家系统\Orders_ty.cs" />
+    <Compile Include="商家系统\ResourcesDetails.cs" />
+    <Compile Include="商家系统\ResourcesDetails_ty.cs" />
+    <Compile Include="商家系统\ShoppingCar.cs" />
+    <Compile Include="商家系统\UserAddress.cs" />
+    <Compile Include="商家系统\长城\Orders_cc.cs" />
+    <Compile Include="商家系统\长城\ResourcesDetails_cc.cs" />
+    <Compile Include="天问业主\AppPoint.cs" />
+    <Compile Include="天问业主\Audit_BindingRoom.cs" />
+    <Compile Include="天问业主\Audit_InviteUser.cs" />
+    <Compile Include="天问业主\BindUserInfo.cs" />
+    <Compile Include="天问业主\BindUserInfo_HJ.cs" />
+    <Compile Include="天问业主\Community.cs" />
+    <Compile Include="天问业主\CommunityNotificationTW.cs" />
+    <Compile Include="天问业主\CostInfo.cs" />
+    <Compile Include="天问业主\CostInfo_RongXin.cs" />
+    <Compile Include="天问业主\IncidentAccept.cs" />
+    <Compile Include="天问业主\IncidentAcceptManage_Pro.cs" />
+    <Compile Include="天问业主\IncidentAccept_bl.cs" />
+    <Compile Include="天问业主\IncidentAccept_JH.cs" />
+    <Compile Include="天问业主\IncidentRoomAndUser.cs" />
+    <Compile Include="天问业主\InviteUser.cs" />
+    <Compile Include="天问业主\Location.cs" />
+    <Compile Include="天问业主\NoticeInfo.cs" />
+    <Compile Include="天问业主\OwnerBangDing.cs" />
+    <Compile Include="天问业主\Register.cs" />
+    <Compile Include="天问业主\Rental.cs" />
+    <Compile Include="天问业主\Sms.cs" />
+    <Compile Include="天问业主\SyncIncidentStatusForZL.cs" />
+    <Compile Include="天问业主\TWBBSManager.cs" />
+    <Compile Include="天问业主\UserProposal.cs" />
+    <Compile Include="天问物管\BusinessDynamicsMg.cs" />
+    <Compile Include="天问物管\BusinessDynamic_ty.cs" />
+    <Compile Include="天问物管\CommunityManage.cs" />
+    <Compile Include="天问物管\ComprehensiveInspectionManage.cs" />
+    <Compile Include="天问物管\ComprehensiveInspectionManage_pro.cs" />
+    <Compile Include="天问物管\DynamicManage.cs" />
+    <Compile Include="天问物管\EquipmentManage.cs" />
+    <Compile Include="天问物管\EquipmentManage_v2.cs" />
+    <Compile Include="天问物管\FunctionPopeManage.cs" />
+    <Compile Include="天问物管\getCommunity.cs" />
+    <Compile Include="天问物管\HouseInspectionManage.cs" />
+    <Compile Include="天问物管\HouseInspectManage_new.cs" />
+    <Compile Include="天问物管\IncidentAcceptManage.cs" />
+    <Compile Include="天问物管\IncidentAcceptManage_ty.cs" />
+    <Compile Include="天问物管\IncidentAcceptPush.cs" />
+    <Compile Include="天问物管\JHPersonQuery.cs" />
+    <Compile Include="天问物管\login.cs" />
+    <Compile Include="天问物管\MeterManage.cs" />
+    <Compile Include="天问物管\OnlineMessage.cs" />
+    <Compile Include="天问物管\QualityManage.cs" />
+    <Compile Include="天问物管\RoomManage.cs" />
+    <Compile Include="天问物管\SearchCustomerManage_v2.cs" />
+    <Compile Include="天问物管\SearchCustomerManage.cs" />
+    <Compile Include="天问物管\SearchManage.cs" />
+    <Compile Include="天问物管\SwitchSystem.cs" />
+    <Compile Include="天问物管\UserInfo.cs" />
+    <Compile Include="天问物管\WaitWorkCount.cs" />
+    <Compile Include="天问物管\WorkDiary.cs" />
+    <Compile Include="天问物管\WorkManage.cs" />
+    <Compile Include="彰泰\CRM\CRMIncidentAccept.cs" />
+    <Compile Include="彰泰\CRM\IncidentAcceptCRM_ZT.cs" />
+    <Compile Include="彰泰\ZT_ExecResult.cs" />
+    <Compile Include="彰泰\报事录入\IncidentManagement_报事管理.cs" />
+    <Compile Include="微信支付\WeiXinPayPrec_lf.cs" />
+    <Compile Include="微信支付\WeiXinPay_lf.cs" />
+    <Compile Include="微信支付\WeiXinPayBuss_lf.cs" />
+    <Compile Include="微信支付\WeiXinPay_New.cs" />
+    <Compile Include="支付宝支付\AlipayBusinessOrder_Changcheng.cs" />
+    <Compile Include="支付宝支付\AlipayPrec_lf.cs" />
+    <Compile Include="支付宝支付\Alipay_lf.cs" />
+    <Compile Include="支付宝支付\AlipayBusinessOrder_lf.cs" />
+    <Compile Include="微信支付\lib\Config.cs" />
+    <Compile Include="微信支付\lib\Data.cs" />
+    <Compile Include="微信支付\lib\Exception.cs" />
+    <Compile Include="微信支付\lib\HttpService.cs" />
+    <Compile Include="微信支付\lib\Log.cs" />
+    <Compile Include="微信支付\lib\Notify.cs" />
+    <Compile Include="微信支付\lib\WxPayApi.cs" />
+    <Compile Include="微信支付\WeiXinPay.cs" />
+    <Compile Include="微信支付\WeiXinPayBuss.cs" />
+    <Compile Include="微信支付\WeiXinPayPrec.cs" />
+    <Compile Include="微信支付\WeiXinPay_Xxw.cs" />
+    <Compile Include="日志记录\RecordClientInfo.cs" />
+    <Compile Include="泰禾业主\BBSManager.cs" />
+    <Compile Include="泰禾业主\CommunityManager_th.cs" />
+    <Compile Include="泰禾业主\ExpressManager.cs" />
+    <Compile Include="泰禾业主\FeesManager_th.cs" />
+    <Compile Include="天问物管\JH_OperateLog.cs" />
+    <Compile Include="泰禾业主\IncidentAcceptManager_th.cs" />
+    <Compile Include="泰禾业主\Register_th.cs" />
+    <Compile Include="泰禾业主\RoomManager_th.cs" />
+    <Compile Include="泰禾业主\UserRoomIdentity.cs" />
+    <Compile Include="泰禾业主\Visitor_th.cs" />
+    <Compile Include="长城\租售\GWAppRentalManage.cs" />
+    <Compile Include="长城\租售\GWAppRentalManage_Add.cs" />
+    <Compile Include="长城\租售\GWAppRentalManage_Detail.cs" />
+    <Compile Include="长城\租售\GWAppRentalManage_Filter.cs" />
+    <Compile Include="长城\租售\GWAppRentalManage_List.cs" />
+    <Compile Include="长城\租售\GWAppRentalManage_Update.cs" />
+    <Compile Include="长城\首页\GWAppHomeManage.cs" />
+    <Compile Include="长城\首页\GWAppHomeManage_Task.cs" />
+    <Compile Include="门禁\令令\Entrance_JinDi.cs" />
+    <Compile Include="门禁\令令\LingLingEntrance.cs" />
+    <Compile Include="门禁\妙兜\MiaoDouEntrance.cs" />
+    <Compile Include="门禁\立林\LiLingEntrance.cs" />
+    <Compile Include="门禁\立林\LiLingEntranceConfig.cs" />
+    <Compile Include="支付宝支付\Alipay.cs" />
+    <Compile Include="支付宝支付\AlipayBusinessOrder.cs" />
+    <Compile Include="支付宝支付\AlipayPrec.cs" />
+    <Compile Include="支付宝支付\AlipayPrec_MY.cs" />
+    <Compile Include="支付宝支付\Alipay_Xxw.cs" />
+    <Compile Include="支付宝支付\lib\AlipayConfig.cs" />
+    <Compile Include="支付宝支付\lib\AlipayCore.cs" />
+    <Compile Include="支付宝支付\lib\AlipayNotify.cs" />
+    <Compile Include="支付宝支付\lib\RSA.cs" />
+    <Compile Include="银联支付\UnionPayBuss.cs" />
+    <Compile Include="银联支付\UnionPayPrec.cs" />
+    <Compile Include="银联支付\UnionPay_Xxw.cs" />
+    <Compile Include="银联支付\UnionUtil.cs" />
+    <Compile Include="银联支付\UnionPay.cs" />
+    <Compile Include="银联支付\upacp_sdk_net\com\unionpay\acp\sdk\AcpService.cs" />
+    <Compile Include="银联支付\upacp_sdk_net\com\unionpay\acp\sdk\BigNum.cs" />
+    <Compile Include="银联支付\upacp_sdk_net\com\unionpay\acp\sdk\CertUtil.cs" />
+    <Compile Include="银联支付\upacp_sdk_net\com\unionpay\acp\sdk\HttpClient.cs" />
+    <Compile Include="银联支付\upacp_sdk_net\com\unionpay\acp\sdk\SDKConfig.cs" />
+    <Compile Include="银联支付\upacp_sdk_net\com\unionpay\acp\sdk\SDKUtil.cs" />
+    <Compile Include="银联支付\upacp_sdk_net\com\unionpay\acp\sdk\SecurityUtil.cs" />
+    <Compile Include="预存\ReceFeesPrec.cs" />
+    <Compile Include="预存\ReceFeesPrec_BGY.cs" />
+    <Compile Include="鸿坤\HKLogin.cs" />
+    <Compile Include="鸿坤\HKParkCostInfo.cs" />
+    <Compile Include="鸿坤\CostInfo_HK.cs" />
+    <Compile Include="鸿坤\HKCallCenter.cs" />
+    <Compile Include="鸿坤\HKUserModel.cs" />
+    <Compile Include="鸿坤\HK_CommunityNotification.cs" />
+    <Compile Include="鸿坤\HK_IncidentAccept.cs" />
+    <Compile Include="鸿坤\HK_OperateLog.cs" />
+    <Compile Include="鸿坤\HK_RoomRelation.cs" />
+    <Compile Include="鸿坤\HK_WebService.cs" />
+    <Compile Include="鸿坤\SynchronizeIncidentData.cs" />
+    <Compile Include="鸿坤\鸿坤建行支付\HKCCBPay.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\Bll.csproj">
+      <Project>{639A3C6A-1853-4880-A659-12BD9F60DA24}</Project>
+      <Name>Bll</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{9A3D9FCD-5EDA-47B8-B418-E65A9831FAC3}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dal\Dal.csproj">
+      <Project>{b6e58338-2a20-4b68-aba2-66d1e2be3dfd}</Project>
+      <Name>Dal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dapper\DapperExtensions\DapperExtensions.csproj">
+      <Project>{4c1a2c6c-a469-4c87-98d1-f1d517fa1acf}</Project>
+      <Name>DapperExtensions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DBUtility\DBUtility.csproj">
+      <Project>{17E9E55F-7F10-4A7A-9B64-BE1FCCDADE82}</Project>
+      <Name>DBUtility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KernelDev\KernelDev.csproj">
+      <Project>{8d9a171a-4350-43cf-93bc-727e708bd6ae}</Project>
+      <Name>KernelDev</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{47E6469C-8C61-4D60-93FA-BDF122DA4322}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tools\Tools.csproj">
+      <Project>{a7cc6ba5-d0db-45db-b25f-ca73d775d125}</Project>
+      <Name>Tools</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="aliyun-net-sdk-core">
+      <HintPath>C:\Users\Administrator\.nuget\packages\aliyun-net-sdk-core\1.5.3\lib\net45\aliyun-net-sdk-core.dll</HintPath>
+    </Reference>
+    <Reference Include="Aliyun.OSS, Version=1.0.5626.29242, Culture=neutral, PublicKeyToken=0ad4175f0dac0b9b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLLibs\Aliyun.OSS.dll</HintPath>
+    </Reference>
+    <Reference Include="allinpay.utils, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\GIT\TWInterfaceNew\Business\DLLLibs\allinpay.utils.dll</HintPath>
+    </Reference>
+    <Reference Include="AopSdk, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLLibs\AopSdk.dll</HintPath>
+    </Reference>
+    <Reference Include="BOCOMSDK, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLLibs\BOCOMSDK.dll</HintPath>
+    </Reference>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.1.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>京东支付\thirdlib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="CCBRSA, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>鸿坤建行支付\Libs\CCBRSA.dll</HintPath>
+    </Reference>
+    <Reference Include="cebpay.utils, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLLibs\cebpay.utils.dll</HintPath>
+    </Reference>
+    <Reference Include="CMBCSDKDLL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLLibs\CMBCSDKDLL.dll</HintPath>
+    </Reference>
+    <Reference Include="Dapper, Version=1.50.5.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dapper.1.50.5\lib\net451\Dapper.dll</HintPath>
+    </Reference>
+    <Reference Include="EACPSO">
+      <HintPath>DLLLibs\EACPSO.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLLibs\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Core, Version=0.44.0.5, Culture=neutral, PublicKeyToken=13235d27fcbfff58, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>鸿坤建行支付\Libs\IKVM.OpenJDK.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Security, Version=0.44.0.5, Culture=neutral, PublicKeyToken=13235d27fcbfff58, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>鸿坤建行支付\Libs\IKVM.OpenJDK.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.Runtime, Version=0.44.0.5, Culture=neutral, PublicKeyToken=13235d27fcbfff58, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>鸿坤建行支付\Libs\IKVM.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="jose-jwt, Version=2.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\jose-jwt.2.0.1\lib\net40\jose-jwt.dll</HintPath>
+    </Reference>
+    <Reference Include="JWT, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\JWT.4.0.0\lib\net46\JWT.dll</HintPath>
+    </Reference>
+    <Reference Include="LitJson, Version=0.7.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLLibs\LitJson.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\netstandard1.0\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="TaiHeSmsSdk, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLLibs\TaiHeSmsSdk.dll</HintPath>
+    </Reference>
+    <Reference Include="TrustPayClient, Version=1.0.2.18916, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>日照农行支付\Libs\TrustPayClient.dll</HintPath>
+    </Reference>
+    <Reference Include="UnionInvoice, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLLibs\UnionInvoice.dll</HintPath>
+    </Reference>
+    <Reference Include="unionqmf.utils">
+      <HintPath>..\..\..\GIT\TWInterfaceNew\Business\DLLLibs\unionqmf.utils.dll</HintPath>
+    </Reference>
+    <Reference Include="UnionQmfPaySdk, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLLibs\UnionQmfPaySdk.dll</HintPath>
+    </Reference>
+    <Reference Include="wxpay.utils">
+      <HintPath>..\..\..\GIT\TWInterfaceNew\Business\DLLLibs\wxpay.utils.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DLLLibs\Aliyun.OSS.dll" />
+    <Content Include="DLLLibs\AopSdk.dll" />
+    <Content Include="DLLLibs\BOCOMSDK.dll" />
+    <Content Include="DLLLibs\cebpay.utils.dll" />
+    <Content Include="DLLLibs\cebpay.utils.pdb" />
+    <Content Include="DLLLibs\CMBCSDKDLL.dll" />
+    <Content Include="DLLLibs\EACPSO.dll" />
+    <Content Include="DLLLibs\ICSharpCode.SharpZipLib.dll" />
+    <Content Include="DLLLibs\LitJson.dll" />
+    <Content Include="DLLLibs\SADK.CMBC.x64.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DLLLibs\SADK.CMBC.x86.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DLLLibs\swiftpass.utils.dll" />
+    <Content Include="DLLLibs\TaiHeSmsSdk.dll" />
+    <Content Include="DLLLibs\UnionInvoice.dll" />
+    <Content Include="DLLLibs\UnionQmfPaySdk.dll" />
+    <Content Include="京东支付\thirdlib\BouncyCastle.Crypto.dll" />
+    <Content Include="京东支付\thirdlib\Newtonsoft.Json.dll" />
+    <Content Include="鸿坤\鸿坤建行支付\Libs\CCBRSA.dll" />
+    <Content Include="鸿坤\鸿坤建行支付\Libs\IKVM.OpenJDK.Core.dll" />
+    <Content Include="鸿坤\鸿坤建行支付\Libs\IKVM.OpenJDK.Security.dll" />
+    <Content Include="鸿坤\鸿坤建行支付\Libs\IKVM.Runtime.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="DLLLibs\cebpay.utils.dll.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\HK_webServiecReference\hkserviceImplService.wsdl" />
+    <None Include="Web References\HK_webServiecReference\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\MJSMSApiService\Api.wsdl" />
+    <None Include="Web References\MJSMSApiService\MmsIDGroup.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MJSMSApiService\MmsRecvFileGroup.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MJSMSApiService\MmsReportGroup.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MJSMSApiService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\MJSMSApiService\SmsIDGroup.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MJSMSApiService\SmsRecvGroup.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MJSMSApiService\SmsReportGroup.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://callcenter.hongkun.com.cn/HK/service/hk">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\HK_webServiecReference\</RelPath>
+      <UpdateFromURL>http://callcenter.hongkun.com.cn/HK/service/hk</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Business_HK_webServiecReference_hkserviceImplService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://sms3.mobset.com:8080/Api%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\MJSMSApiService\</RelPath>
+      <UpdateFromURL>http://sms3.mobset.com:8080/Api%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Business_MJSMSApi_MobsetApi</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Business.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Business_MJSMSApi_MobsetApi" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://sms3.mobset.com:8080/Api</Value>
+    </Setting>
+    <Setting Name="Business_HK_webServiecReference_hkserviceImplService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://callcenter.hongkun.com.cn/HK/service/hk</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

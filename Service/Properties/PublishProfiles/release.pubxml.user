@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+此文件由 Web 项目的发布/打包过程使用。可以通过编辑此 MSBuild 文件
+自定义此过程的行为。为了解与此相关的更多内容，请访问 https://go.microsoft.com/fwlink/?LinkID=208121。 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>D:\发布\TWMobilePropertyNew\TWInterface\Service\</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="AlipayCallBack/Alipay.ashx">
+      <publishTime>04/29/2018 13:06:14</publishTime>
+    </File>
+    <File Include="AlipayCallBack/AlipayBuss.ashx">
+      <publishTime>04/29/2018 13:06:15</publishTime>
+    </File>
+    <File Include="AlipayCallBack/AlipayBuss_lf.ashx">
+      <publishTime>02/21/2019 18:49:59</publishTime>
+    </File>
+    <File Include="AlipayCallBack/AliPayPrec.ashx">
+      <publishTime>04/29/2018 13:06:15</publishTime>
+    </File>
+    <File Include="AlipayCallBack/AliPayPrec_lf.ashx">
+      <publishTime>02/21/2019 18:49:59</publishTime>
+    </File>
+    <File Include="AlipayCallBack/AliPayPrec_MJ.ashx">
+      <publishTime>04/29/2018 13:06:15</publishTime>
+    </File>
+    <File Include="AlipayCallBack/Alipay_MJ.ashx">
+      <publishTime>04/29/2018 13:06:14</publishTime>
+    </File>
+    <File Include="AlipayCallBack/Alipay_Xxw.ashx">
+      <publishTime>04/29/2018 13:06:14</publishTime>
+    </File>
+    <File Include="AllinPayCallBack/AllinPay.ashx">
+      <publishTime>04/29/2018 13:06:15</publishTime>
+    </File>
+    <File Include="AllinPayCallBack/AllinPayPrec.ashx">
+      <publishTime>04/29/2018 13:06:15</publishTime>
+    </File>
+    <File Include="AllinPayCallBack/AllinPay_hy.ashx">
+      <publishTime>06/04/2019 19:40:20</publishTime>
+    </File>
+    <File Include="Api.ashx">
+      <publishTime>06/22/2019 10:26:41</publishTime>
+    </File>
+    <File Include="BGYPost.ashx">
+      <publishTime>07/10/2018 20:34:20</publishTime>
+    </File>
+    <File Include="BGYPOSTService.ashx">
+      <publishTime>07/10/2018 20:34:20</publishTime>
+    </File>
+    <File Include="bin/Aliyun.OSS.dll">
+      <publishTime>10/16/2018 18:56:41</publishTime>
+    </File>
+    <File Include="bin/allinpay.utils.dll">
+      <publishTime>06/17/2019 19:56:48</publishTime>
+    </File>
+    <File Include="bin/App_global.asax.compiled">
+      <publishTime>07/25/2018 16:47:25</publishTime>
+    </File>
+    <File Include="bin/App_global.asax.dll">
+      <publishTime>07/25/2018 16:47:25</publishTime>
+    </File>
+    <File Include="bin/BLL.dll">
+      <publishTime>06/22/2019 10:55:05</publishTime>
+    </File>
+    <File Include="bin/BLL.dll.config">
+      <publishTime>07/26/2018 22:51:20</publishTime>
+    </File>
+    <File Include="bin/BLL.pdb">
+      <publishTime>06/22/2019 10:55:05</publishTime>
+    </File>
+    <File Include="bin/BOCOMSDK.dll">
+      <publishTime>06/04/2019 19:39:52</publishTime>
+    </File>
+    <File Include="bin/Business.dll">
+      <publishTime>06/22/2019 10:55:08</publishTime>
+    </File>
+    <File Include="bin/Business.dll.config">
+      <publishTime>06/04/2019 19:39:51</publishTime>
+    </File>
+    <File Include="bin/Business.XmlSerializers.dll">
+      <publishTime>06/22/2019 10:55:08</publishTime>
+    </File>
+    <File Include="bin/CCBRSA.dll">
+      <publishTime>10/16/2018 18:56:41</publishTime>
+    </File>
+    <File Include="bin/CMBCSDKDLL.dll">
+      <publishTime>06/04/2019 19:39:52</publishTime>
+    </File>
+    <File Include="bin/cn.jpush.api.dll">
+      <publishTime>02/21/2019 18:50:00</publishTime>
+    </File>
+    <File Include="bin/COM.Excel.dll">
+      <publishTime>09/13/2017 16:57:19</publishTime>
+    </File>
+    <File Include="bin/Common.dll">
+      <publishTime>06/22/2019 10:55:05</publishTime>
+    </File>
+    <File Include="bin/Common.dll.config">
+      <publishTime>07/26/2018 22:51:21</publishTime>
+    </File>
+    <File Include="bin/Common.pdb">
+      <publishTime>06/22/2019 10:55:05</publishTime>
+    </File>
+    <File Include="bin/Common.XmlSerializers.dll">
+      <publishTime>06/22/2019 10:55:06</publishTime>
+    </File>
+    <File Include="bin/Dal.dll">
+      <publishTime>06/22/2019 10:55:05</publishTime>
+    </File>
+    <File Include="bin/Dal.dll.config">
+      <publishTime>07/26/2018 22:51:21</publishTime>
+    </File>
+    <File Include="bin/Dal.pdb">
+      <publishTime>06/22/2019 10:55:05</publishTime>
+    </File>
+    <File Include="bin/Dapper.dll">
+      <publishTime>05/16/2018 18:40:30</publishTime>
+    </File>
+    <File Include="bin/Dapper.pdb">
+      <publishTime>08/30/2017 15:30:16</publishTime>
+    </File>
+    <File Include="bin/DapperExtensions.dll">
+      <publishTime>06/22/2019 10:55:03</publishTime>
+    </File>
+    <File Include="bin/DapperExtensions.pdb">
+      <publishTime>06/22/2019 10:55:03</publishTime>
+    </File>
+    <File Include="bin/DBUtility.dll">
+      <publishTime>06/22/2019 10:55:03</publishTime>
+    </File>
+    <File Include="bin/DBUtility.dll.config">
+      <publishTime>07/26/2018 22:51:21</publishTime>
+    </File>
+    <File Include="bin/DBUtility.pdb">
+      <publishTime>06/22/2019 10:55:03</publishTime>
+    </File>
+    <File Include="bin/DLLLibs/SADK.CMBC.x64.dll">
+      <publishTime>06/04/2019 19:41:57</publishTime>
+    </File>
+    <File Include="bin/DLLLibs/SADK.CMBC.x86.dll">
+      <publishTime>06/04/2019 19:41:46</publishTime>
+    </File>
+    <File Include="bin/Excel.dll">
+      <publishTime>04/29/2018 13:06:10</publishTime>
+    </File>
+    <File Include="bin/HeJinUnionPaySdk.dll">
+      <publishTime>07/17/2018 13:55:38</publishTime>
+    </File>
+    <File Include="bin/ICSharpCode.SharpZipLib.dll">
+      <publishTime>04/29/2018 13:06:10</publishTime>
+    </File>
+    <File Include="bin/IKVM.OpenJDK.Core.dll">
+      <publishTime>10/16/2018 18:56:41</publishTime>
+    </File>
+    <File Include="bin/IKVM.OpenJDK.Security.dll">
+      <publishTime>10/16/2018 18:56:41</publishTime>
+    </File>
+    <File Include="bin/IKVM.Runtime.dll">
+      <publishTime>10/16/2018 18:56:41</publishTime>
+    </File>
+    <File Include="bin/jose-jwt.dll">
+      <publishTime>06/21/2017 19:57:54</publishTime>
+    </File>
+    <File Include="bin/JPushAPI.dll">
+      <publishTime>09/02/2017 10:41:59</publishTime>
+    </File>
+    <File Include="bin/JPushAPI.pdb">
+      <publishTime>09/02/2017 10:41:59</publishTime>
+    </File>
+    <File Include="bin/JWT.dll">
+      <publishTime>05/05/2019 07:25:22</publishTime>
+    </File>
+    <File Include="bin/KernelDev.dll">
+      <publishTime>06/22/2019 10:55:03</publishTime>
+    </File>
+    <File Include="bin/KernelDev.pdb">
+      <publishTime>06/22/2019 10:55:03</publishTime>
+    </File>
+    <File Include="bin/LitJson.dll">
+      <publishTime>04/29/2018 13:06:10</publishTime>
+    </File>
+    <File Include="bin/log4net.config">
+      <publishTime>08/25/2018 11:41:33</publishTime>
+    </File>
+    <File Include="bin/log4net.dll">
+      <publishTime>03/08/2017 19:26:22</publishTime>
+    </File>
+    <File Include="bin/LTP.Common.dll">
+      <publishTime>04/29/2018 13:06:10</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Agent.Intercept.dll">
+      <publishTime>09/13/2017 16:57:29</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.DependencyCollector.dll">
+      <publishTime>09/13/2017 16:57:29</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.PerfCounterCollector.dll">
+      <publishTime>09/13/2017 16:57:29</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.ServerTelemetryChannel.dll">
+      <publishTime>09/13/2017 16:57:30</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Web.dll">
+      <publishTime>09/13/2017 16:57:30</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.WindowsServer.dll">
+      <publishTime>09/13/2017 16:57:30</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ApplicationInsights.dll">
+      <publishTime>09/13/2017 16:57:27</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>09/13/2017 16:57:30</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Vbe.Interop.dll">
+      <publishTime>03/31/2015 15:56:02</publishTime>
+    </File>
+    <File Include="bin/Model.dll">
+      <publishTime>06/22/2019 10:55:04</publishTime>
+    </File>
+    <File Include="bin/Model.pdb">
+      <publishTime>06/22/2019 10:55:04</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>03/24/2018 17:44:14</publishTime>
+    </File>
+    <File Include="bin/office.dll">
+      <publishTime>03/31/2015 15:56:02</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>09/13/2017 16:57:31</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>09/13/2017 16:57:31</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>09/13/2017 16:57:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>09/13/2017 16:57:38</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>09/13/2017 16:57:42</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>09/13/2017 16:57:32</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>09/13/2017 16:57:32</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>09/13/2017 16:57:32</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>09/13/2017 16:57:32</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>09/13/2017 16:57:32</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>09/13/2017 16:57:36</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>09/13/2017 16:57:33</publishTime>
+    </File>
+    <File Include="bin/Service.dll">
+      <publishTime>06/22/2019 10:55:12</publishTime>
+    </File>
+    <File Include="bin/Service.pdb">
+      <publishTime>06/22/2019 10:55:12</publishTime>
+    </File>
+    <File Include="bin/stdole.dll">
+      <publishTime>07/26/2018 20:35:16</publishTime>
+    </File>
+    <File Include="bin/TaiHeSmsSdk.dll">
+      <publishTime>07/26/2018 22:51:20</publishTime>
+    </File>
+    <File Include="bin/Tools.dll">
+      <publishTime>08/30/2017 14:36:43</publishTime>
+    </File>
+    <File Include="bin/Tools.pdb">
+      <publishTime>08/30/2017 14:36:43</publishTime>
+    </File>
+    <File Include="bin/TrustPayClient.dll">
+      <publishTime>07/26/2018 22:51:21</publishTime>
+    </File>
+    <File Include="bin/TWTools.dll">
+      <publishTime>06/22/2019 10:55:03</publishTime>
+    </File>
+    <File Include="bin/TWTools.dll.config">
+      <publishTime>12/11/2018 21:37:16</publishTime>
+    </File>
+    <File Include="bin/TWTools.pdb">
+      <publishTime>06/22/2019 10:55:03</publishTime>
+    </File>
+    <File Include="bin/UnionInvoice.dll">
+      <publishTime>02/21/2019 18:49:59</publishTime>
+    </File>
+    <File Include="bin/UnionQmfPaySdk.dll">
+      <publishTime>06/04/2019 19:40:12</publishTime>
+    </File>
+    <File Include="BusinessDetailsCss/BusinessDetails.css">
+      <publishTime>04/29/2018 13:06:15</publishTime>
+    </File>
+    <File Include="BusinessDetailsCss/flickerplate.css">
+      <publishTime>04/29/2018 13:06:15</publishTime>
+    </File>
+    <File Include="BusinessDetailsHtml/BusinessDetails.aspx">
+      <publishTime>07/10/2018 20:34:21</publishTime>
+    </File>
+    <File Include="BusinessDetailsHtml/BusinessDetails2.html">
+      <publishTime>04/29/2018 13:06:15</publishTime>
+    </File>
+    <File Include="CMBCPayCallBack/Notify.ashx">
+      <publishTime>06/04/2019 19:40:20</publishTime>
+    </File>
+    <File Include="EInvoiceCallBack/EInvoiceErr_BGY.ashx">
+      <publishTime>07/26/2018 22:51:21</publishTime>
+    </File>
+    <File Include="EInvoiceCallBack/EInvoice_BGY.ashx">
+      <publishTime>04/29/2018 13:06:15</publishTime>
+    </File>
+    <File Include="ErpUploadFile.ashx">
+      <publishTime>04/29/2018 13:06:14</publishTime>
+    </File>
+    <File Include="Files.ashx">
+      <publishTime>04/29/2018 13:06:14</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>04/29/2018 13:06:14</publishTime>
+    </File>
+    <File Include="HJCRM_Service.asmx">
+      <publishTime>04/29/2018 13:06:14</publishTime>
+    </File>
+    <File Include="HKCCBPayCallBack/HKCCBPay.ashx">
+      <publishTime>10/16/2018 18:56:41</publishTime>
+    </File>
+    <File Include="HongKun/css/bootstrap.min.css">
+      <publishTime>07/10/2018 20:34:21</publishTime>
+    </File>
+    <File Include="HongKun/css/desktop_new.css">
+      <publishTime>07/10/2018 20:34:21</publishTime>
+    </File>
+    <File Include="HongKun/DataRequest.ashx">
+      <publishTime>07/10/2018 20:34:21</publishTime>
+    </File>
+    <File Include="HongKun/dynamic_charge.aspx">
+      <publishTime>07/10/2018 20:34:21</publishTime>
+    </File>
+    <File Include="HongKun/dynamic_equipment.aspx">
+      <publishTime>07/10/2018 20:34:21</publishTime>
+    </File>
+    <File Include="HongKun/dynamic_personal.aspx">
+      <publishTime>07/10/2018 20:34:21</publishTime>
+    </File>
+    <File Include="HongKun/dynamic_quality.aspx">
+      <publishTime>07/10/2018 20:34:21</publishTime>
+    </File>
+    <File Include="HongKun/dynamic_resource.aspx">
+      <publishTime>07/10/2018 20:34:21</publishTime>
+    </File>
+    <File Include="HongKun/dynamic_service.aspx">
+      <publishTime>07/10/2018 20:34:21</publishTime>
+    </File>
+    <File Include="HongKun/img/ic_first.png">
+      <publishTime>07/10/2018 20:34:21</publishTime>
+    </File>
+    <File Include="HongKun/img/ic_last.png">
+      <publishTime>07/10/2018 20:34:21</publishTime>
+    </File>
+    <File Include="HongKun/img/ic_next.png">
+      <publishTime>07/10/2018 20:34:21</publishTime>
+    </File>
+    <File Include="HongKun/img/ic_previous.png">
+      <publishTime>07/10/2018 20:34:21</publishTime>
+    </File>
+    <File Include="HongKun/js/bootstrap.min.js">
+      <publishTime>07/10/2018 20:34:21</publishTime>
+    </File>
+    <File Include="HongKun/js/echarts.js">
+      <publishTime>07/10/2018 20:34:21</publishTime>
+    </File>
+    <File Include="HongKun/js/jquery.min.js">
+      <publishTime>07/10/2018 20:34:21</publishTime>
+    </File>
+    <File Include="HongKun/js/map/china.js">
+      <publishTime>07/10/2018 20:34:21</publishTime>
+    </File>
+    <File Include="HongKun/OpenSans-Light.ttf">
+      <publishTime>07/10/2018 20:34:21</publishTime>
+    </File>
+    <File Include="HongKun/OpenSans-Regular.ttf">
+      <publishTime>07/10/2018 20:34:21</publishTime>
+    </File>
+    <File Include="Images/1.png">
+      <publishTime>04/29/2018 13:06:15</publishTime>
+    </File>
+    <File Include="Images/10.png">
+      <publishTime>04/29/2018 13:06:15</publishTime>
+    </File>
+    <File Include="Images/2.png">
+      <publishTime>04/29/2018 13:06:15</publishTime>
+    </File>
+    <File Include="Images/3.png">
+      <publishTime>04/29/2018 13:06:15</publishTime>
+    </File>
+    <File Include="Images/4.png">
+      <publishTime>04/29/2018 13:06:15</publishTime>
+    </File>
+    <File Include="Images/9.png">
+      <publishTime>04/29/2018 13:06:15</publishTime>
+    </File>
+    <File Include="Images/alipay.png">
+      <publishTime>07/10/2018 20:34:21</publishTime>
+    </File>
+    <File Include="Images/arrow-left-dark.png">
+      <publishTime>04/29/2018 13:06:15</publishTime>
+    </File>
+    <File Include="Images/arrow-left-light.png">
+      <publishTime>04/29/2018 13:06:15</publishTime>
+    </File>
+    <File Include="Images/arrow-right-dark.png">
+      <publishTime>04/29/2018 13:06:15</publishTime>
+    </File>
+    <File Include="Images/arrow-right-light.png">
+      <publishTime>04/29/2018 13:06:15</publishTime>
+    </File>
+    <File Include="Images/arrows.png">
+      <publishTime>04/29/2018 13:06:15</publishTime>
+    </File>
+    <File Include="Images/cashpay.png">
+      <publishTime>09/12/2018 18:55:07</publishTime>
+    </File>
+    <File Include="Images/circle/diannaoshuma.png">
+      <publishTime>04/29/2018 13:06:15</publishTime>
+    </File>
+    <File Include="Images/circle/huwailvyou.png">
+      <publishTime>04/29/2018 13:06:15</publishTime>
+    </File>
+    <File Include="Images/circle/jiankangmeirong.png">
+      <publishTime>04/29/2018 13:06:15</publishTime>
+    </File>
+    <File Include="Images/circle/qinziyuer.png">
+      <publishTime>04/29/2018 13:06:15</publishTime>
+    </File>
+    <File Include="Images/circle/qipaiyouxi.png">
+      <publishTime>04/29/2018 13:06:15</publishTime>
+    </File>
+    <File Include="Images/circle/shiwuzhaoling.png">
+      <publishTime>04/29/2018 13:06:15</publishTime>
+    </File>
+    <File Include="Images/circle/tanhunlunjia.png">
+      <publishTime>04/29/2018 13:06:15</publishTime>
+    </File>
+    <File Include="Images/circle/xiaoqugongjian.png">
+      <publishTime>04/29/2018 13:06:15</publishTime>
+    </File>
+    <File Include="Images/market/chongwuyongpin.png">
+      <publishTime>04/29/2018 13:06:15</publishTime>
+    </File>
+    <File Include="Images/market/ertongwanju.png">
+      <publishTime>04/29/2018 13:06:15</publishTime>
+    </File>
+    <File Include="Images/market/jiayongdianqi.png">
+      <publishTime>04/29/2018 13:06:15</publishTime>
+    </File>
+    <File Include="Images/market/meizhuangliren.png">
+      <publishTime>04/29/2018 13:06:15</publishTime>
+    </File>
+    <File Include="Images/market/nannvtongzhuang.png">
+      <publishTime>04/29/2018 13:06:15</publishTime>
+    </File>
+    <File Include="Images/market/shenghuobaihuo.png">
+      <publishTime>04/29/2018 13:06:15</publishTime>
+    </File>
+    <File Include="Images/market/shoujishuma.png">
+      <publishTime>04/29/2018 13:06:15</publishTime>
+    </File>
+    <File Include="Images/market/yundonghuwai.png">
+      <publishTime>04/29/2018 13:06:15</publishTime>
+    </File>
+    <File Include="Images/unionpay.png">
+      <publishTime>07/10/2018 20:34:21</publishTime>
+    </File>
+    <File Include="Images/wchatpay.png">
+      <publishTime>07/10/2018 20:34:21</publishTime>
+    </File>
+    <File Include="Images/x1.png">
+      <publishTime>04/29/2018 13:06:15</publishTime>
+    </File>
+    <File Include="Images/x2.png">
+      <publishTime>04/29/2018 13:06:15</publishTime>
+    </File>
+    <File Include="Images/x3.png">
+      <publishTime>04/29/2018 13:06:15</publishTime>
+    </File>
+    <File Include="Images/x4.png">
+      <publishTime>04/29/2018 13:06:15</publishTime>
+    </File>
+    <File Include="Images/x5.png">
+      <publishTime>04/29/2018 13:06:15</publishTime>
+    </File>
+    <File Include="Jsscipt-UI/flickerplate.min.js">
+      <publishTime>04/29/2018 13:06:15</publishTime>
+    </File>
+    <File Include="Jsscipt-UI/jquery-1.8.3.min.js">
+      <publishTime>04/29/2018 13:06:15</publishTime>
+    </File>
+    <File Include="Jsscipt-UI/jquery-1.9.1.js">
+      <publishTime>04/29/2018 13:06:15</publishTime>
+    </File>
+    <File Include="Jsscipt-UI/jquery-finger-v0.1.0.min.js">
+      <publishTime>04/29/2018 13:06:15</publishTime>
+    </File>
+    <File Include="Jsscipt-UI/jquery-ui-1.10.2.custom.js">
+      <publishTime>04/29/2018 13:06:15</publishTime>
+    </File>
+    <File Include="Jsscipt-UI/jquery-ui-1.10.2.custom.min.js">
+      <publishTime>04/29/2018 13:06:15</publishTime>
+    </File>
+    <File Include="Jsscipt-UI/modernizr-custom-v2.7.1.min.js">
+      <publishTime>04/29/2018 13:06:15</publishTime>
+    </File>
+    <File Include="log4net.config">
+      <publishTime>08/25/2018 11:41:33</publishTime>
+    </File>
+    <File Include="NoticeDetailInfo.aspx">
+      <publishTime>04/29/2018 13:06:14</publishTime>
+    </File>
+    <File Include="Point/Rules.aspx">
+      <publishTime>02/21/2019 18:49:59</publishTime>
+    </File>
+    <File Include="PrecompiledApp.config">
+      <publishTime>07/25/2018 16:47:23</publishTime>
+    </File>
+    <File Include="Push.ashx">
+      <publishTime>09/13/2017 16:57:40</publishTime>
+    </File>
+    <File Include="Service.ashx">
+      <publishTime>04/29/2018 13:06:14</publishTime>
+    </File>
+    <File Include="TrustPayCallBack/TrustPay.ashx">
+      <publishTime>08/25/2018 11:41:33</publishTime>
+    </File>
+    <File Include="UnionPayCallBack/PayOk.aspx">
+      <publishTime>04/29/2018 13:06:15</publishTime>
+    </File>
+    <File Include="UnionPayCallBack/UnionPay.ashx">
+      <publishTime>04/29/2018 13:06:15</publishTime>
+    </File>
+    <File Include="UnionPayCallBack/UnionPayBuss.ashx">
+      <publishTime>04/29/2018 13:06:15</publishTime>
+    </File>
+    <File Include="UnionPayCallBack/UnionPayPrec.ashx">
+      <publishTime>04/29/2018 13:06:15</publishTime>
+    </File>
+    <File Include="UnionPayCallBack/UnionPay_Xxw.ashx">
+      <publishTime>04/29/2018 13:06:15</publishTime>
+    </File>
+    <File Include="UnionQmfCallBack/UnionQmf.ashx">
+      <publishTime>07/26/2018 22:51:21</publishTime>
+    </File>
+    <File Include="Update.aspx">
+      <publishTime>04/29/2018 13:06:14</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>06/22/2019 10:55:12</publishTime>
+    </File>
+    <File Include="Webhook/Bugly.ashx">
+      <publishTime>08/25/2018 11:41:33</publishTime>
+    </File>
+    <File Include="WeiXinPayCallBack/WeiXinPay.ashx">
+      <publishTime>04/29/2018 13:06:15</publishTime>
+    </File>
+    <File Include="WeiXinPayCallBack/WeiXinPayBuss.ashx">
+      <publishTime>04/29/2018 13:06:15</publishTime>
+    </File>
+    <File Include="WeiXinPayCallBack/WeiXinPayBuss_lf.ashx">
+      <publishTime>02/21/2019 18:49:59</publishTime>
+    </File>
+    <File Include="WeiXinPayCallBack/WeiXinPayPrec.ashx">
+      <publishTime>02/21/2019 18:49:59</publishTime>
+    </File>
+    <File Include="WeiXinPayCallBack/WeiXinPayPrec_lf.ashx">
+      <publishTime>02/21/2019 18:50:00</publishTime>
+    </File>
+    <File Include="WeiXinPayCallBack/WeiXinPay_Xxw.ashx">
+      <publishTime>04/29/2018 13:06:15</publishTime>
+    </File>
+    <File Include="WeiXinPayCallBack/WeiXinWftPay.ashx">
+      <publishTime>01/25/2018 16:05:00</publishTime>
+    </File>
+    <File Include="WftPayCallBack/WftPay.ashx">
+      <publishTime>04/29/2018 13:06:15</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://webservice.review.km.kmss.landray.com/" xmlns:ns1="http://schemas.xmlsoap.org/soap/http" name="IKmReviewWebserviceServiceService" targetNamespace="http://webservice.review.km.kmss.landray.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xs:schema attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://webservice.review.km.kmss.landray.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:complexType name="kmReviewParamterForm">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="attachmentForms" nillable="true" type="tns:attachmentForm" />
+          <xs:element minOccurs="0" name="docContent" type="xs:string" />
+          <xs:element minOccurs="0" name="docCreator" type="xs:string" />
+          <xs:element minOccurs="0" name="docProperty" type="xs:string" />
+          <xs:element minOccurs="0" name="docStatus" type="xs:string" />
+          <xs:element minOccurs="0" name="docSubject" type="xs:string" />
+          <xs:element minOccurs="0" name="fdKeyword" type="xs:string" />
+          <xs:element minOccurs="0" name="fdTemplateId" type="xs:string" />
+          <xs:element minOccurs="0" name="flowParam" type="xs:string" />
+          <xs:element minOccurs="0" name="formValues" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="attachmentForm">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="fdKey" type="xs:string" />
+          <xs:element minOccurs="0" name="fdFileName" type="xs:string" />
+          <xs:element ns1:expectedContentTypes="application/octet-stream" minOccurs="0" name="fdAttachment" type="xs:base64Binary" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="Exception">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="message" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="Exception" type="tns:Exception" />
+      <xs:element name="addReview" type="tns:addReview" />
+      <xs:complexType name="addReview">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="tns:kmReviewParamterForm" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="addReviewResponse" type="tns:addReviewResponse" />
+      <xs:complexType name="addReviewResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="addReview">
+    <wsdl:part name="parameters" element="tns:addReview" />
+  </wsdl:message>
+  <wsdl:message name="addReviewResponse">
+    <wsdl:part name="parameters" element="tns:addReviewResponse" />
+  </wsdl:message>
+  <wsdl:message name="Exception">
+    <wsdl:part name="Exception" element="tns:Exception" />
+  </wsdl:message>
+  <wsdl:portType name="IKmReviewWebserviceService">
+    <wsdl:operation name="addReview">
+      <wsdl:input name="addReview" message="tns:addReview" />
+      <wsdl:output name="addReviewResponse" message="tns:addReviewResponse" />
+      <wsdl:fault name="Exception" message="tns:Exception" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="IKmReviewWebserviceServiceServiceSoapBinding" type="tns:IKmReviewWebserviceService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="addReview">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="addReview">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="addReviewResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="IKmReviewWebserviceServiceService">
+    <wsdl:port name="IKmReviewWebserviceServicePort" binding="tns:IKmReviewWebserviceServiceServiceSoapBinding">
+      <soap:address location="http://testoa.newhopegroup.com:8091/sys/webservice/kmReviewWebserviceService" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

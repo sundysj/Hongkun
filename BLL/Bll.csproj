@@ -1,0 +1,393 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{639A3C6A-1853-4880-A659-12BD9F60DA24}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BLL</RootNamespace>
+    <AssemblyName>BLL</AssemblyName>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="LTP.Common, Version=3.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\LTP.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Charge\Bll_Tb_Charge_Receipt.cs" />
+    <Compile Include="Charge\Bll_Tb_Charge_ReceiptDetail.cs" />
+    <Compile Include="Club\Bll_Tb_Club_MaterialDetail.cs" />
+    <Compile Include="Club\Bll_Tb_Club_Merchandise.cs" />
+    <Compile Include="Club\Bll_Tb_Club_Store.cs" />
+    <Compile Include="Club\Bll_Tb_Club_Warehouse.cs" />
+    <Compile Include="Common\Bll_Tb_Common_CommonInfo.cs" />
+    <Compile Include="Common\Bll_Tb_Common_CommonInfoType.cs" />
+    <Compile Include="Common\Bll_Tb_Common_CommunityService.cs" />
+    <Compile Include="Common\Bll_Tb_Common_TelList.cs" />
+    <Compile Include="Common\Bll_Tb_SendMessageRecord.cs" />
+    <Compile Include="Equipment\Bll_Tb_Equipment_Device.cs" />
+    <Compile Include="Equipment\Bll_Tb_EQ_EquipmentFile.cs" />
+    <Compile Include="Equipment\Bll_Tb_Eq_EquipmentStatus.cs" />
+    <Compile Include="Equipment\Bll_Tb_EQ_Task.cs" />
+    <Compile Include="Equipment\Bll_Tb_EQ_TaskEquipment.cs" />
+    <Compile Include="Equipment\Bll_Tb_EQ_TaskEquipmentLine.cs" />
+    <Compile Include="Equipment\Bll_Tb_EQ_WbTask.cs" />
+    <Compile Include="HSPR\Bll_Tb_HSPR_CommActivities.cs" />
+    <Compile Include="HSPR\Bll_Tb_HSPR_CommActivitiesMessage.cs" />
+    <Compile Include="HSPR\Bll_Tb_HSPR_CommActivitiesPerson.cs" />
+    <Compile Include="HSPR\Bll_Tb_HSPR_CommFriend.cs" />
+    <Compile Include="HSPR\Bll_Tb_HSPR_CommSocialScope.cs" />
+    <Compile Include="HSPR\Bll_Tb_HSPR_Community.cs" />
+    <Compile Include="HSPR\Bll_Tb_HSPR_CommunityActivities.cs" />
+    <Compile Include="HSPR\Bll_Tb_HSPR_CommunityBuss.cs" />
+    <Compile Include="HSPR\Bll_Tb_HSPR_CommunityCircle.cs" />
+    <Compile Include="HSPR\Bll_Tb_HSPR_CommunityInfo.cs" />
+    <Compile Include="HSPR\Bll_Tb_HSPR_CommunityServiceMatching.cs" />
+    <Compile Include="HSPR\Bll_Tb_HSPR_CommunitySuggestions.cs" />
+    <Compile Include="HSPR\Bll_Tb_HSPR_CorpIncidentType.cs" />
+    <Compile Include="HSPR\Bll_Tb_HSPR_CostItem.cs" />
+    <Compile Include="HSPR\Bll_Tb_HSPR_CostStandard.cs" />
+    <Compile Include="HSPR\Bll_Tb_HSPR_Customer.cs" />
+    <Compile Include="HSPR\Bll_Tb_HSPR_CustomerLive.cs" />
+    <Compile Include="HSPR\Bll_Tb_HSPR_ElegantDemeanor.cs" />
+    <Compile Include="HSPR\Bll_Tb_HSPR_Fees.cs" />
+    <Compile Include="HSPR\Bll_Tb_HSPR_FeesDetail.cs" />
+    <Compile Include="HSPR\Bll_Tb_HSPR_FeesReceipts.cs" />
+    <Compile Include="HSPR\Bll_Tb_HSPR_IncidentAccept.cs" />
+    <Compile Include="HSPR\Bll_Tb_HSPR_IncidentLocation.cs" />
+    <Compile Include="HSPR\Bll_Tb_HSPR_IncidentRegional.cs" />
+    <Compile Include="HSPR\Bll_Tb_HSPR_IncidentRemindersInfo.cs" />
+    <Compile Include="HSPR\Bll_Tb_HSPR_IncidentType.cs" />
+    <Compile Include="HSPR\Bll_Tb_HSPR_IncidentTypeWarning.cs" />
+    <Compile Include="HSPR\Bll_Tb_HSPR_IncidentTypeWarningRule.cs" />
+    <Compile Include="HSPR\Bll_Tb_HSPR_KeyDoorDeviceSetting.cs" />
+    <Compile Include="HSPR\Bll_Tb_HSPR_OffsetPreDetail.cs" />
+    <Compile Include="HSPR\Bll_Tb_HSPR_Parking.cs" />
+    <Compile Include="HSPR\Bll_Tb_HSPR_ParkingCancel.cs" />
+    <Compile Include="HSPR\Bll_Tb_HSPR_ParkingCar.cs" />
+    <Compile Include="HSPR\Bll_Tb_HSPR_ParkingCarSignFeesDetail.cs" />
+    <Compile Include="HSPR\Bll_Tb_HSPR_ParkingCarSignHand.cs" />
+    <Compile Include="HSPR\Bll_Tb_HSPR_ParkingHand.cs" />
+    <Compile Include="HSPR\Bll_Tb_HSPR_ParkingHis.cs" />
+    <Compile Include="HSPR\Bll_Tb_HSPR_ParkingOpt.cs" />
+    <Compile Include="HSPR\Bll_Tb_HSPR_ParkingSpaces.cs" />
+    <Compile Include="HSPR\Bll_Tb_HSPR_PreCostsDetail.cs" />
+    <Compile Include="HSPR\Bll_Tb_HSPR_PreCostsReceipts.cs" />
+    <Compile Include="HSPR\Bll_Tb_HSPR_RefundMultiAudit.cs" />
+    <Compile Include="HSPR\Bll_Tb_HSPR_Region.cs" />
+    <Compile Include="HSPR\Bll_Tb_HSPR_Room.cs" />
+    <Compile Include="HSPR\Bll_Tb_HSPR_TempIncidentWarning.cs" />
+    <Compile Include="HSPR\Bll_Tb_HSPR_WaiversFee.cs" />
+    <Compile Include="HSPR\Tb_HSPR_Express.cs" />
+    <Compile Include="Information\Bll_Tb_Information_AboutUs.cs" />
+    <Compile Include="Information\Bll_Tb_Information_Activities.cs" />
+    <Compile Include="Information\Bll_Tb_Information_BussPromotion.cs" />
+    <Compile Include="Information\Bll_Tb_Information_ConsumerGuid.cs" />
+    <Compile Include="Information\Bll_Tb_Information_ContactUs.cs" />
+    <Compile Include="Information\Bll_Tb_Information_WebEditor.cs" />
+    <Compile Include="Management\Bll_Tb_Management_Order.cs" />
+    <Compile Include="Management\Bll_Tb_Management_Service.cs" />
+    <Compile Include="Management\Bll_Tb_Management_Supplier.cs" />
+    <Compile Include="Management\Bll_Tb_Management_Type.cs" />
+    <Compile Include="OAPublicWork\Bll_Tb_OAPublicWork_AskForLeave.cs" />
+    <Compile Include="OAPublicWork\Bll_Tb_OAPublicWork_BackupFile.cs" />
+    <Compile Include="OAPublicWork\Bll_Tb_OAPublicWork_BorrowerMoney.cs" />
+    <Compile Include="OAPublicWork\Bll_Tb_OAPublicWork_BuyPlanCheck.cs" />
+    <Compile Include="OAPublicWork\Bll_Tb_OAPublicWork_BuyPlanCheckDetail.cs" />
+    <Compile Include="OAPublicWork\Bll_Tb_OAPublicWork_Chat.cs" />
+    <Compile Include="OAPublicWork\Bll_Tb_OAPublicWork_ChatHistory.cs" />
+    <Compile Include="OAPublicWork\Bll_Tb_OAPublicWork_ConferenceResource.cs" />
+    <Compile Include="OAPublicWork\Bll_Tb_OAPublicWork_ContractInfo.cs" />
+    <Compile Include="OAPublicWork\Bll_Tb_OAPublicWork_FileDocumentlist.cs" />
+    <Compile Include="OAPublicWork\Bll_Tb_OAPublicWork_FilesAdjunct.cs" />
+    <Compile Include="OAPublicWork\Bll_Tb_OAPublicWork_FixedAssetsLossTable.cs" />
+    <Compile Include="OAPublicWork\Bll_Tb_OAPublicWork_FixedAssetsLossTableDetail.cs" />
+    <Compile Include="OAPublicWork\Bll_Tb_OAPublicWork_InsuranceCheck.cs" />
+    <Compile Include="OAPublicWork\Bll_Tb_OAPublicWork_MaterialBuyPlan.cs" />
+    <Compile Include="OAPublicWork\Bll_Tb_OAPublicWork_OfficialConference.cs" />
+    <Compile Include="OAPublicWork\Bll_Tb_OAPublicWork_OfficialDocument.cs" />
+    <Compile Include="OAPublicWork\Bll_Tb_OAPublicWork_OfficialDocumentBrowseUser.cs" />
+    <Compile Include="OAPublicWork\Bll_Tb_OAPublicWork_PeopleOutWork.cs" />
+    <Compile Include="OAPublicWork\Bll_Tb_OAPublicWork_Reimbursement.cs" />
+    <Compile Include="OAPublicWork\Bll_Tb_OAPublicWork_ReimbursementDetail.cs" />
+    <Compile Include="OAPublicWork\Bll_Tb_OAPublicWork_SendCar.cs" />
+    <Compile Include="OAPublicWork\Bll_Tb_OAPublicWork_WorkContact.cs" />
+    <Compile Include="OAPublicWork\Bll_Tb_OAPublicWork_WorkRecord.cs" />
+    <Compile Include="OAPublicWork\Bll_Tb_OAPublicWork_WorkRecordIdea.cs" />
+    <Compile Include="OAPublicWork\Bll_Tb_OAPublicWork_WorkRecordNoticeUser.cs" />
+    <Compile Include="OAPublicWork\Bll_Tb_OAPublicWork_WorkReport.cs" />
+    <Compile Include="OL\Bll_Tb_OL_AlipayDetail.cs" />
+    <Compile Include="OL\Bll_Tb_OL_AlipayOrder.cs" />
+    <Compile Include="OL\Bll_Tb_OL_UnionPayDetail.cs" />
+    <Compile Include="OL\Bll_Tb_OL_UnionPayOrder.cs" />
+    <Compile Include="OL\Bll_Tb_OL_WeiXinPayDetail.cs" />
+    <Compile Include="OL\Bll_Tb_OL_WeiXinPayOrder.cs" />
+    <Compile Include="Order\Bll_Tb_Order_BusCar.cs" />
+    <Compile Include="Order\Bll_Tb_Order_Regist.cs" />
+    <Compile Include="Order\Bll_Tb_Order_RegistWare.cs" />
+    <Compile Include="Pm\Bll_Tb_Pm_Dictionary.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Qm\Bll_Tb_QM_Dictionary.cs" />
+    <Compile Include="Qm\Bll_Tb_Qm_ItemType.cs" />
+    <Compile Include="Qm\Bll_Tb_Qm_Object.cs" />
+    <Compile Include="Qm\Bll_Tb_Qm_ObjectDetail.cs" />
+    <Compile Include="Qm\Bll_Tb_Qm_Point.cs" />
+    <Compile Include="Qm\Bll_Tb_Qm_PointObject.cs" />
+    <Compile Include="Qm\Bll_Tb_Qm_Problem.cs" />
+    <Compile Include="Qm\Bll_Tb_Qm_Standard.cs" />
+    <Compile Include="Qm\Bll_Tb_Qm_StandardDetail.cs" />
+    <Compile Include="Qm\Bll_Tb_Qm_Task.cs" />
+    <Compile Include="Qm\Bll_Tb_Qm_TaskAbarbeitung.cs" />
+    <Compile Include="Qm\Bll_Tb_Qm_TaskDone.cs" />
+    <Compile Include="Qm\Bll_Tb_Qm_TaskFiles.cs" />
+    <Compile Include="Qm\Bll_Tb_Qm_TaskLevel.cs" />
+    <Compile Include="Qm\Bll_Tb_Qm_TaskPoint.cs" />
+    <Compile Include="Resources\Bll_Tb_Resources_Attr.cs" />
+    <Compile Include="Resources\Bll_Tb_Resources_Details.cs" />
+    <Compile Include="Resources\Bll_Tb_Resources_Release.cs" />
+    <Compile Include="Resources\Bll_Tb_Resources_ReleaseCarrental.cs" />
+    <Compile Include="Resources\Bll_Tb_Resources_ReleaseDeduction.cs" />
+    <Compile Include="Resources\Bll_Tb_Resources_ReleaseHotel.cs" />
+    <Compile Include="Resources\Bll_Tb_Resources_ReleaseImages.cs" />
+    <Compile Include="Resources\Bll_Tb_Resources_ReleaseMember.cs" />
+    <Compile Include="Resources\Bll_Tb_Resources_ReleaseRooms.cs" />
+    <Compile Include="Resources\Bll_TB_Resources_ReleaseService.cs" />
+    <Compile Include="Resources\Bll_Tb_Resources_ReleaseTrain.cs" />
+    <Compile Include="Resources\Bll_Tb_Resources_ReleaseTraveling.cs" />
+    <Compile Include="Resources\Bll_Tb_Resources_ReleaseVenues.cs" />
+    <Compile Include="Resources\Bll_Tb_Resources_ReleaseVenuesScheduling.cs" />
+    <Compile Include="Resources\Bll_Tb_Resources_ReleaseVenuesSchedulingDetails.cs" />
+    <Compile Include="Resources\Bll_Tb_Resources_ReleaseVenuesSet.cs" />
+    <Compile Include="Resources\Bll_Tb_Resources_ReleaseWare.cs" />
+    <Compile Include="Resources\Bll_Tb_Resources_Type.cs" />
+    <Compile Include="SQMSys\Bll_Tb_Sys_Department.cs" />
+    <Compile Include="SQMSys\Bll_Tb_Sys_Field.cs" />
+    <Compile Include="SQMSys\Bll_Tb_Sys_Function.cs" />
+    <Compile Include="SQMSys\Bll_Tb_Sys_Group.cs" />
+    <Compile Include="SQMSys\Bll_Tb_Sys_GroupSet.cs" />
+    <Compile Include="SQMSys\Bll_Tb_Sys_Log.cs" />
+    <Compile Include="SQMSys\Bll_Tb_Sys_Log_his.cs" />
+    <Compile Include="SQMSys\Bll_Tb_Sys_Message.cs" />
+    <Compile Include="SQMSys\Bll_Tb_Sys_MessageAdjunct.cs" />
+    <Compile Include="SQMSys\Bll_Tb_Sys_Organ.cs" />
+    <Compile Include="SQMSys\Bll_Tb_Sys_PowerClick.cs" />
+    <Compile Include="SQMSys\Bll_Tb_Sys_PowerNode.cs" />
+    <Compile Include="SQMSys\Bll_Tb_Sys_PowerNodeDep.cs" />
+    <Compile Include="SQMSys\Bll_Tb_Sys_PowerNodeRole.cs" />
+    <Compile Include="SQMSys\Bll_Tb_Sys_PowerNodeSDep.cs" />
+    <Compile Include="SQMSys\Bll_Tb_Sys_PowerNodeSRole.cs" />
+    <Compile Include="SQMSys\Bll_Tb_Sys_PowerNodeTemp.cs" />
+    <Compile Include="SQMSys\Bll_Tb_Sys_Role.cs" />
+    <Compile Include="SQMSys\Bll_Tb_Sys_RoleData.cs" />
+    <Compile Include="SQMSys\Bll_Tb_Sys_RolePope.cs" />
+    <Compile Include="SQMSys\Bll_Tb_Sys_TakePersonPic.cs" />
+    <Compile Include="SQMSys\Bll_Tb_Sys_User.cs" />
+    <Compile Include="SQMSys\Bll_Tb_Sys_UserCalendar.cs" />
+    <Compile Include="SQMSys\Bll_Tb_Sys_UserEntry.cs" />
+    <Compile Include="SQMSys\Bll_Tb_Sys_UserRole.cs" />
+    <Compile Include="System\Bll_Tb_System_Borough.cs" />
+    <Compile Include="System\Bll_Tb_System_BusinessCorp.cs" />
+    <Compile Include="System\Bll_Tb_System_BusinessType.cs" />
+    <Compile Include="System\Bll_Tb_System_City.cs" />
+    <Compile Include="System\Bll_Tb_System_Community.cs" />
+    <Compile Include="System\Bll_Tb_System_Config.cs" />
+    <Compile Include="System\Bll_Tb_System_Corp.cs" />
+    <Compile Include="System\Bll_Tb_System_DataBase.cs" />
+    <Compile Include="System\Bll_Tb_System_Error.cs" />
+    <Compile Include="System\Bll_Tb_System_ErrorMessage.cs" />
+    <Compile Include="System\Bll_Tb_System_Help.cs" />
+    <Compile Include="System\Bll_Tb_System_HelpPowerNode.cs" />
+    <Compile Include="System\Bll_Tb_System_Log.cs" />
+    <Compile Include="System\Bll_Tb_System_Manager.cs" />
+    <Compile Include="System\Bll_Tb_System_ManagerRole.cs" />
+    <Compile Include="System\Bll_Tb_System_PowerNode.cs" />
+    <Compile Include="System\Bll_Tb_System_Province.cs" />
+    <Compile Include="System\Bll_Tb_System_Register.cs" />
+    <Compile Include="System\Bll_Tb_System_Role.cs" />
+    <Compile Include="System\Bll_Tb_System_RolePope.cs" />
+    <Compile Include="System\Bll_Tb_System_SmsNatAccount.cs" />
+    <Compile Include="System\Bll_Tb_System_Street.cs" />
+    <Compile Include="Sys\Bll_Tb_Sys_Department.cs" />
+    <Compile Include="Sys\Bll_Tb_Sys_Organ.cs" />
+    <Compile Include="Sys\Bll_Tb_Sys_Role.cs" />
+    <Compile Include="Sys\Bll_Tb_Sys_RoleData.cs" />
+    <Compile Include="Sys\Bll_Tb_Sys_RolePope.cs" />
+    <Compile Include="Sys\Bll_Tb_Sys_TakePic.cs" />
+    <Compile Include="Sys\Bll_Tb_Sys_TakePicContract.cs" />
+    <Compile Include="Sys\Bll_Tb_Sys_TakePicContractDetail.cs" />
+    <Compile Include="Sys\Bll_Tb_Sys_TakePicContractFeesDetail.cs" />
+    <Compile Include="Sys\Bll_Tb_Sys_TakePicIncidentTypeDeskTop.cs" />
+    <Compile Include="Sys\Bll_Tb_Sys_TakePicPark.cs" />
+    <Compile Include="Sys\Bll_Tb_Sys_TakePicRoomState.cs" />
+    <Compile Include="Sys\Bll_Tb_Sys_TakePicSec.cs" />
+    <Compile Include="Sys\Bll_Tb_Sys_TakePicSecRoomState.cs" />
+    <Compile Include="Sys\Bll_Tb_Sys_TakePicWork.cs" />
+    <Compile Include="Sys\Bll_Tb_Sys_TakePicWorkDetail.cs" />
+    <Compile Include="Sys\Bll_Tb_Sys_User.cs" />
+    <Compile Include="Sys\Bll_Tb_Sys_UserRole.cs" />
+    <Compile Include="Task\Bll_Tb_HSPR_IncidentError.cs" />
+    <Compile Include="Unified\Bll_Tb_AlipayCertifiate.cs" />
+    <Compile Include="Unified\Bll_Tb_Community.cs" />
+    <Compile Include="Unified\Bll_Tb_Notice.cs" />
+    <Compile Include="Unified\Bll_Tb_UnionPayCertificate.cs" />
+    <Compile Include="Unified\Bll_Tb_User.cs" />
+    <Compile Include="Unified\Bll_Tb_User_History.cs" />
+    <Compile Include="Unified\Bll_Tb_User_Recommended.cs" />
+    <Compile Include="Unified\Bll_Tb_User_Relation.cs" />
+    <Compile Include="Unified\Bll_Tb_WeiXinPayCertificate.cs" />
+    <Compile Include="Unify\Bll_Tb_Unify_Building.cs" />
+    <Compile Include="Unify\Bll_Tb_Unify_Community.cs" />
+    <Compile Include="Unify\Bll_Tb_Unify_Corp.cs" />
+    <Compile Include="Unify\Bll_Tb_Unify_Customer.cs" />
+    <Compile Include="Unify\Bll_Tb_Unify_CustomerLive.cs" />
+    <Compile Include="Unify\Bll_Tb_Unify_InfoDynamic.cs" />
+    <Compile Include="WorkFlow\Bll_Tb_WorkFlow_CheckLevel.cs" />
+    <Compile Include="WorkFlow\Bll_Tb_WorkFlow_DepartUserOprLevel.cs" />
+    <Compile Include="WorkFlow\Bll_Tb_WorkFlow_FlowNode.cs" />
+    <Compile Include="WorkFlow\Bll_Tb_WorkFlow_FlowNodeTemp.cs" />
+    <Compile Include="WorkFlow\Bll_Tb_WorkFlow_FlowRecord.cs" />
+    <Compile Include="WorkFlow\Bll_Tb_WorkFlow_FlowRecordTemp.cs" />
+    <Compile Include="WorkFlow\Bll_Tb_WorkFlow_FlowSort.cs" />
+    <Compile Include="WorkFlow\Bll_Tb_WorkFlow_GeneralAdjunct.cs" />
+    <Compile Include="WorkFlow\Bll_Tb_WorkFlow_GeneralDecompose.cs" />
+    <Compile Include="WorkFlow\Bll_Tb_WorkFlow_GeneralMain.cs" />
+    <Compile Include="WorkFlow\Bll_Tb_WorkFlow_GeneralMain_Hasten.cs" />
+    <Compile Include="WorkFlow\Bll_Tb_WorkFlow_Instance.cs" />
+    <Compile Include="WorkFlow\Bll_Tb_WorkFlow_InstanceTemp.cs" />
+    <Compile Include="WorkFlow\Bll_Tb_WorkFlow_NodeDepart.cs" />
+    <Compile Include="WorkFlow\Bll_Tb_WorkFlow_NodeDepartTemp.cs" />
+    <Compile Include="WorkFlow\Bll_Tb_WorkFlow_NodeRole.cs" />
+    <Compile Include="WorkFlow\Bll_Tb_WorkFlow_NodeRoleTemp.cs" />
+    <Compile Include="WorkFlow\Bll_Tb_WorkFlow_NodeUser.cs" />
+    <Compile Include="WorkFlow\Bll_Tb_WorkFlow_NodeUserTemp.cs" />
+    <Compile Include="WorkFlow\Bll_Tb_WorkFlow_NoticeUser.cs" />
+    <Compile Include="WorkFlow\Bll_Tb_WorkFlow_NoticeUserTemp.cs" />
+    <Compile Include="WorkFlow\Bll_Tb_WorkFlow_OprLevelTable.cs" />
+    <Compile Include="WorkFlow\Bll_Tb_WorkFlow_OprLevelTableTemp.cs" />
+    <Compile Include="WorkFlow\Bll_Tb_WorkFlow_WorkFlowOverNoticeUser.cs" />
+    <Compile Include="WorkFlow\Bll_Tb_WorkFlow_WorkFlowOverNoticeUserTemp.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Dal\Dal.csproj">
+      <Project>{B6E58338-2A20-4B68-ABA2-66D1E2BE3DFD}</Project>
+      <Name>Dal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{47E6469C-8C61-4D60-93FA-BDF122DA4322}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="dll\Excel.dll" />
+    <Content Include="dll\LTP.Common.dll" />
+    <Content Include="dll\office.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="TwBuildingService">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strCommName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ModelList" type="tns:ArrayOfBuildEntity" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfBuildEntity">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="BuildEntity" nillable="true" type="tns:BuildEntity" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="BuildEntity">
+        <s:attribute name="Number" type="s:string" />
+        <s:attribute name="OtherName1" type="s:string" />
+        <s:attribute name="CommunityName" type="s:string" />
+        <s:attribute name="OtherName2" type="s:string" />
+        <s:attribute name="CommunityNumber" type="s:string" />
+        <s:attribute name="Name" type="s:string" />
+        <s:attribute name="SaleName" type="s:string" />
+        <s:attribute name="Street" type="s:string" />
+        <s:attribute name="Address" type="s:string" />
+        <s:attribute name="StartBuildDate" type="s:dateTime" use="required" />
+        <s:attribute name="JoinDate" type="s:dateTime" use="required" />
+        <s:attribute name="PlanBuildArea" type="s:decimal" use="required" />
+        <s:attribute name="BuildArea" type="s:decimal" use="required" />
+        <s:attribute name="OverBuildArea" type="s:decimal" use="required" />
+        <s:attribute name="UnderBuildArea" type="s:decimal" use="required" />
+        <s:attribute name="HouseNum" type="s:decimal" use="required" />
+        <s:attribute name="PlanUseArea" type="s:decimal" use="required" />
+        <s:attribute name="UseArea" type="s:decimal" use="required" />
+        <s:attribute name="Purpose" type="s:string" />
+        <s:attribute name="Description" type="s:string" />
+      </s:complexType>
+      <s:element name="TwBuildingServiceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TwBuildingServiceResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TwRoomService">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strCommName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ModelList" type="tns:ArrayOfHouseEntity" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfHouseEntity">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="HouseEntity" nillable="true" type="tns:HouseEntity" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="HouseEntity">
+        <s:attribute name="HouseName" type="s:string" />
+        <s:attribute name="SimpleHouseNum" type="s:string" />
+        <s:attribute name="BuildNumber" type="s:string" />
+        <s:attribute name="HouseNumer" type="s:string" />
+        <s:attribute name="Number" type="s:string" />
+        <s:attribute name="HouseTakeStatus" type="s:string" />
+        <s:attribute name="OpeningDate" type="s:dateTime" use="required" />
+        <s:attribute name="FactDate" type="s:dateTime" use="required" />
+        <s:attribute name="ActualDate" type="s:dateTime" use="required" />
+        <s:attribute name="BuildArea" type="s:decimal" use="required" />
+        <s:attribute name="ActualBuiltupArea" type="s:decimal" use="required" />
+        <s:attribute name="ForecastBuiltupArea" type="s:decimal" use="required" />
+        <s:attribute name="ForecastSetArea" type="s:decimal" use="required" />
+        <s:attribute name="ActualSetArea" type="s:decimal" use="required" />
+        <s:attribute name="GardenArea" type="s:decimal" use="required" />
+        <s:attribute name="HouseShape" type="s:string" />
+        <s:attribute name="Direction" type="s:string" />
+        <s:attribute name="Address" type="s:string" />
+        <s:attribute name="Purpose" type="s:string" />
+      </s:complexType>
+      <s:element name="TwRoomServiceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TwRoomServiceResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TwCustomerService">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strCommName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ModelList" type="tns:ArrayOfCustomerEntity" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfCustomerEntity">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="CustomerEntity" nillable="true" type="tns:CustomerEntity" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CustomerEntity">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="CustomerHouses" type="tns:CustomerHouseEntity" />
+        </s:sequence>
+        <s:attribute name="CustomerNumber" type="s:string" />
+        <s:attribute name="OrganizationNumber" type="s:string" />
+        <s:attribute name="Name" type="s:string" />
+        <s:attribute name="CustomerType" type="s:string" />
+        <s:attribute name="CertificateType" type="s:string" />
+        <s:attribute name="PersonID" type="s:string" />
+        <s:attribute name="Address" type="s:string" />
+        <s:attribute name="Mobile" type="s:string" />
+        <s:attribute name="Phone" type="s:string" />
+        <s:attribute name="Phone2" type="s:string" />
+        <s:attribute name="Email" type="s:string" />
+        <s:attribute name="WorkPlace" type="s:string" />
+        <s:attribute name="Sex" type="s:string" />
+        <s:attribute name="MarryState" type="s:string" />
+        <s:attribute name="CustomerCountry" type="s:string" />
+        <s:attribute name="Degree" type="s:string" />
+        <s:attribute name="CustomerOccp" type="s:string" />
+        <s:attribute name="Corporation" type="s:string" />
+        <s:attribute name="CompType" type="s:string" />
+        <s:attribute name="LicenseNum" type="s:string" />
+        <s:attribute name="IsOwner" type="s:boolean" use="required" />
+      </s:complexType>
+      <s:complexType name="CustomerHouseEntity">
+        <s:attribute name="HouseNumber" type="s:string" />
+        <s:attribute name="BuildNumber" type="s:string" />
+        <s:attribute name="InDate" type="s:dateTime" use="required" />
+      </s:complexType>
+      <s:element name="TwCustomerServiceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TwCustomerServiceResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TwCustomerMemberService">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strCommName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ModelList" type="tns:ArrayOfCustomerMemberEntity" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfCustomerMemberEntity">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="CustomerMemberEntity" nillable="true" type="tns:CustomerMemberEntity" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CustomerMemberEntity">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="CustomerRelation" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CustomerNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OrganizationNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CustomerType" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CertificateType" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PersonID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Address" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Mobile" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Phone" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Phone2" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Sex" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Corporation" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LicenseNum" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IsOwner" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="TwCustomerMemberServiceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TwCustomerMemberServiceResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="TwBuildingServiceSoapIn">
+    <wsdl:part name="parameters" element="tns:TwBuildingService" />
+  </wsdl:message>
+  <wsdl:message name="TwBuildingServiceSoapOut">
+    <wsdl:part name="parameters" element="tns:TwBuildingServiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="TwRoomServiceSoapIn">
+    <wsdl:part name="parameters" element="tns:TwRoomService" />
+  </wsdl:message>
+  <wsdl:message name="TwRoomServiceSoapOut">
+    <wsdl:part name="parameters" element="tns:TwRoomServiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="TwCustomerServiceSoapIn">
+    <wsdl:part name="parameters" element="tns:TwCustomerService" />
+  </wsdl:message>
+  <wsdl:message name="TwCustomerServiceSoapOut">
+    <wsdl:part name="parameters" element="tns:TwCustomerServiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="TwCustomerMemberServiceSoapIn">
+    <wsdl:part name="parameters" element="tns:TwCustomerMemberService" />
+  </wsdl:message>
+  <wsdl:message name="TwCustomerMemberServiceSoapOut">
+    <wsdl:part name="parameters" element="tns:TwCustomerMemberServiceResponse" />
+  </wsdl:message>
+  <wsdl:portType name="HJ_ServiceSoap">
+    <wsdl:operation name="TwBuildingService">
+      <wsdl:input message="tns:TwBuildingServiceSoapIn" />
+      <wsdl:output message="tns:TwBuildingServiceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TwRoomService">
+      <wsdl:input message="tns:TwRoomServiceSoapIn" />
+      <wsdl:output message="tns:TwRoomServiceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TwCustomerService">
+      <wsdl:input message="tns:TwCustomerServiceSoapIn" />
+      <wsdl:output message="tns:TwCustomerServiceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TwCustomerMemberService">
+      <wsdl:input message="tns:TwCustomerMemberServiceSoapIn" />
+      <wsdl:output message="tns:TwCustomerMemberServiceSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="HJ_ServiceHttpGet" />
+  <wsdl:portType name="HJ_ServiceHttpPost" />
+  <wsdl:binding name="HJ_ServiceSoap" type="tns:HJ_ServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="TwBuildingService">
+      <soap:operation soapAction="http://tempuri.org/TwBuildingService" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TwRoomService">
+      <soap:operation soapAction="http://tempuri.org/TwRoomService" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TwCustomerService">
+      <soap:operation soapAction="http://tempuri.org/TwCustomerService" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TwCustomerMemberService">
+      <soap:operation soapAction="http://tempuri.org/TwCustomerMemberService" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="HJ_ServiceSoap12" type="tns:HJ_ServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="TwBuildingService">
+      <soap12:operation soapAction="http://tempuri.org/TwBuildingService" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TwRoomService">
+      <soap12:operation soapAction="http://tempuri.org/TwRoomService" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TwCustomerService">
+      <soap12:operation soapAction="http://tempuri.org/TwCustomerService" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TwCustomerMemberService">
+      <soap12:operation soapAction="http://tempuri.org/TwCustomerMemberService" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="HJ_ServiceHttpGet" type="tns:HJ_ServiceHttpGet">
+    <http:binding verb="GET" />
+  </wsdl:binding>
+  <wsdl:binding name="HJ_ServiceHttpPost" type="tns:HJ_ServiceHttpPost">
+    <http:binding verb="POST" />
+  </wsdl:binding>
+  <wsdl:service name="HJ_Service">
+    <wsdl:port name="HJ_ServiceSoap" binding="tns:HJ_ServiceSoap">
+      <soap:address location="http://10.1.10.147:9025/TWInterface/Service/HJCRM_Service.asmx" />
+    </wsdl:port>
+    <wsdl:port name="HJ_ServiceSoap12" binding="tns:HJ_ServiceSoap12">
+      <soap12:address location="http://10.1.10.147:9025/TWInterface/Service/HJCRM_Service.asmx" />
+    </wsdl:port>
+    <wsdl:port name="HJ_ServiceHttpGet" binding="tns:HJ_ServiceHttpGet">
+      <http:address location="http://10.1.10.147:9025/TWInterface/Service/HJCRM_Service.asmx" />
+    </wsdl:port>
+    <wsdl:port name="HJ_ServiceHttpPost" binding="tns:HJ_ServiceHttpPost">
+      <http:address location="http://10.1.10.147:9025/TWInterface/Service/HJCRM_Service.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

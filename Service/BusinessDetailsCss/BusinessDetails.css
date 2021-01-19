@@ -1,0 +1,411 @@
+﻿@media screen and (max-width: 480px) {
+    body {
+        padding: 0; /*去除内边距*/
+        border: 0; /*去除边框*/
+        margin: 0; /*去除外边距*/
+    }
+
+    #Business {
+        width: 100%;
+        height: auto;
+        overflow-y: auto;
+        /*border:1px red solid;*/
+    }
+
+    #BusinessLogo {
+        width: 100%;
+        max-height: 70%;
+        overflow: hidden;
+        border-bottom: solid 5px #f6f6f6;
+        /*border: 1px red solid;*/
+    }
+
+        #BusinessLogo img {
+            width: 100%;
+            max-height: 100%;
+            display: none;
+        }
+
+        #BusinessLogo #DivBorderBut {
+            padding: 0;
+            border: 0;
+            margin: 0;
+            width: 100%;
+            height: 3px;
+            background-color: #c4c3c3;
+        }
+
+    #BusinessIntroduce {
+        width: 98%;
+        height: auto;
+        overflow: hidden;
+    }
+
+        #BusinessIntroduce ul {
+            width: 94%;
+            margin-left: -6%;
+            height: auto;
+            overflow: hidden;
+        }
+
+            #BusinessIntroduce ul li {
+                line-height: 170%;
+                list-style-type: none;
+                height: auto;
+                /*position: relative;*/
+                /*border:1px red solid;*/
+            }
+
+    .F1 {
+        float: left;
+    }
+
+    .F2 {
+        float: left;
+    }
+
+    #li1 {
+        width: 51%;
+    }
+
+    #li2 {
+        width: 22%;
+        /*margin-left:5px;*/
+    }
+
+    #li3 {
+        width: 26%;
+        text-align: center;
+    }
+
+    #li4 {
+        width: 51%;
+    }
+
+    #li5 {
+        width: 26%;
+        text-align: center;
+    }
+
+    #li6 {
+        width: 22%;
+    }
+
+    #BusinessIntroduce #liDisCountPrice {
+        /*margin-left: 3%;
+            margin-top: 2%;*/
+        font-size: 18px;
+        color: #ff8c57;
+        font-weight: bold;
+        /*position: absolute;*/
+    }
+
+    #BusinessIntroduce #liSalePrice {
+        /*margin-left: 42%;*/
+        color: #ADADAD;
+        text-decoration: line-through;
+        text-align: center;
+        /*margin-left: 75.5%;
+            margin-top: -8%;*/
+        /*position: absolute;*/
+        /*border:1px red solid;*/
+    }
+
+    #BusinessIntroduce #Name {
+        font-size: 17px;
+        /*word-break: break-all;*/
+        display: -moz-inline-box;
+        display: inline-block;
+        /*width: 51%;*/
+        /*border:1px red solid;*/
+    }
+
+    #BusinessIntroduce #AdContent {
+        display: -moz-inline-box;
+        display: inline-block;
+        /*width: 71%;*/
+        /*border:1px red solid;*/
+    }
+
+    #BusinessIntroduce #Nature {
+        font-size: 13px;
+        color: #ff8c57;
+        border: 1px #ff8c57 solid;
+        border-radius:3px;
+        /*width: 24%;*/
+    }
+
+    /*优惠券css*/
+    #BusinessIntroduce #IsSupportCoupon {
+        font-size: 13px;
+        color: #ff8c57;
+        border: 1px #ff8c57 solid;
+        border-radius: 3px;
+        /*width: 24%;*/
+    }
+
+    #BusinessIntroduceBorder {
+        width: 97%;
+        margin-left: 1%;
+        height: 4px;
+        background-color: #e0dada;
+    }
+
+    #BusinessTitle {
+        width: 100%;
+        height: auto;
+        margin-top: -3%;
+        /*border: 1px red solid;*/
+    }
+
+        #BusinessTitle #BuyerEvaluation {
+            display: none;
+        }
+
+        #BusinessTitle #button {
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            /*border:1px black solid;*/
+            margin: 2.5% 0% 5% 0%;
+        }
+
+            #BusinessTitle #button #buttonBD {
+                margin-left: 14%;
+            }
+
+            #BusinessTitle #button #buttonBE {
+                margin-left: 33%;
+            }
+
+            #BusinessTitle #button a {
+                color: black;
+                text-decoration: none;
+                font-size: 17px;
+            }
+
+        #BusinessTitle #BusinessTitleContent {
+            padding: 0;
+            border: 0;
+            margin: 0;
+            width: 100%;
+            height: auto;
+            /*background-color: #EEEEEE;*/
+        }
+
+        #BusinessTitle #BusinessDetail {
+            width: 100%;
+            height: auto;
+            border-top: solid 2px #F6F6F6;
+            /*border:1px red solid;*/
+        }
+
+        #BusinessTitle #BuyerEvaluation {
+            width: 100%;
+            height: auto;
+            background-color: #ffffff;
+            border-top: solid 2px #F6F6F6;
+        }
+
+    #BusinessDetailBorber {
+        background-color: #F56630;
+        width: 35%;
+        height: 3px;
+        margin-left: 5.5%;
+    }
+
+    #BuyerEvaluationBorber {
+        display: none;
+        background-color: #F56630;
+        width: 35%;
+        height: 3px;
+        margin-left: 58.5%;
+    }
+
+    #BusinessDetail #BusinessDetaildivImg {
+        margin: 0;
+        padding: 0;
+        width: 97%;
+        height: auto;
+        padding-left: 5px;
+        padding-right: 5px;
+        background-color: #ffffff;
+        padding-top: 4px;
+        padding-bottom:4px;
+        /*border: 1px yellow solid;*/
+    }
+
+    /*#BusinessDetail #BusinessDetaildivImg1 {
+        margin: 0;
+        padding: 0;
+        width: 99%;
+        padding-left: 175px;
+        padding-top: 1px;
+        background-color: #ffffff;
+        /*padding-top:2%;*/
+    /*border: 1px yellow solid;}*/
+
+
+    /*#BusinessDetaildivImg img {
+        width: 100%;
+        height: auto;
+    }*/
+
+    #BusinessDetaildivImg div:first-child:nth-last-child(1) {
+        width: 100%;
+        height: auto;
+    }
+
+    #BusinessDetaildivImg strong span {
+        word-wrap: break-word;
+        word-break: normal;
+    }
+
+
+    #BusinessDetail #BusinessDetailBack {
+        position: relative;
+        width: 100%;
+        height: 7%;
+        background-color: #ffffff;
+        border-top: solid 2px #f6f6f6;
+    }
+
+        #BusinessDetail #BusinessDetailBack #hr1 {
+            padding: 0;
+            border: 0;
+            margin: 0;
+            width: 30%;
+            margin-left: 6%;
+            margin-top: 6%;
+            margin-bottom: 3%;
+            border-bottom: 1px #c4c3c3 solid;
+            float: left;
+        }
+
+        #BusinessDetail #BusinessDetailBack #hr2 {
+            padding: 0;
+            border: 0;
+            margin: 0;
+            width: 30%;
+            margin-left: 27%;
+            margin-top: 6%;
+            margin-bottom: 3%;
+            border-bottom: 1px #c4c3c3 solid;
+            float: left;
+        }
+
+        #BusinessDetail #BusinessDetailBack p {
+            width: 22%;
+            font-size: 17px;
+            margin-top: 3%;
+            margin-left: 40%;
+            position: absolute;
+        }
+
+    #BusinessDetail #BusinessDetaildivTable {
+        width: 100%;
+        height: auto;
+        clear: both;
+    }
+
+        #BusinessDetail #BusinessDetaildivTable div {
+            padding: 0;
+            border: 0;
+            margin: 0;
+            width: 48%;
+            background-color: #ffffff;
+            float: left;
+            margin-left: 1.5%;
+            height:221px;
+            /*min-height: 244px;*/
+            overflow: hidden;
+            /*margin-bottom: 4px;*/
+            /*border:1px red solid;*/
+        }
+
+        #BusinessDetail #BusinessDetaildivTable ul {
+            padding: 0;
+            border: 0;
+            margin: 0;
+            width: 99%;
+            background-color: #ffffff;
+            height:220px;
+            /*border:1px red solid;*/
+            /*margin-bottom: 4px;*/
+            /*min-height: 244px;*/
+        }
+
+            #BusinessDetail #BusinessDetaildivTable ul li {
+                width: 100%;
+                line-height: 23px;
+                list-style-type: none;
+                font-size: 17px;
+            }
+
+
+                #BusinessDetail #BusinessDetaildivTable ul li a {
+                    color: black;
+                    text-decoration: none;
+                    font-size: 16px;
+                }
+
+    #BusinessDetail #BusinessDetaildivTableSpan {
+        font-size: 17px;
+        color: #ff8c57;
+        font-weight: 200;
+    }
+
+
+    #BusinessDetail #BusinessDetaildivTable ul li img {
+        width: 100%;
+        height: 65%;
+        /*border: 1px red solid;*/
+    }
+
+    #BusinessDetail #BusinessDetaildivTableDel {
+        color: #ADADAD;
+    }
+
+    /*买家评价*/
+    #BuyerEvaluation .BuyerEvaluationdiv {
+        /*border-top: solid 1px #F6F6F6;*/
+        border-bottom: solid 2px #F6F6F6;
+        width:100%;
+    }
+
+
+
+        #BuyerEvaluation .BuyerEvaluationdiv .DivImg {
+            float: left;
+            /*margin-top: 4%;*/
+            margin-left: 8px;
+            margin-right: 8px;
+        }
+        #BuyerEvaluation .BuyerEvaluationdiv .DivImg img{
+            width:110px;
+            height:110px;
+        }
+
+        #BuyerEvaluation .BuyerEvaluationdiv .DivUl {
+            /*margin-left: 14%;
+            margin-left: 8px;*/
+        }
+
+
+        #BuyerEvaluation .BuyerEvaluationdiv ul li {
+            list-style-type: none;
+            color: black;
+            text-decoration: none;
+            font-size: 17px;
+            line-height: 150%;
+        }
+
+            #BuyerEvaluation .BuyerEvaluationdiv ul li span {
+                color: #7D7D7D;
+                margin-left: 2%;
+            }
+        #BuyerEvaluation .BuyerEvaluationdiv ul .liContent {
+            width:73%;
+            margin-left:23.5%;
+        }
+}

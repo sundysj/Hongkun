@@ -1,0 +1,13 @@
+D:\code\物业\鸿坤源码20191025\DBUtility\bin\Release\DBUtility.dll.config
+D:\code\物业\鸿坤源码20191025\DBUtility\bin\Release\DBUtility.dll
+D:\code\物业\鸿坤源码20191025\DBUtility\bin\Release\DBUtility.pdb
+D:\code\物业\鸿坤源码20191025\DBUtility\obj\Release\DBUtility.csprojAssemblyReference.cache
+D:\code\物业\鸿坤源码20191025\DBUtility\obj\Release\DBUtility.dll
+D:\code\物业\鸿坤源码20191025\DBUtility\obj\Release\DBUtility.pdb
+D:\鸿坤代码\鸿坤源码20191025\DBUtility\bin\Release\DBUtility.dll.config
+D:\鸿坤代码\鸿坤源码20191025\DBUtility\bin\Release\DBUtility.dll
+D:\鸿坤代码\鸿坤源码20191025\DBUtility\bin\Release\DBUtility.pdb
+D:\鸿坤代码\鸿坤源码20191025\DBUtility\obj\Release\DBUtility.csprojAssemblyReference.cache
+D:\鸿坤代码\鸿坤源码20191025\DBUtility\obj\Release\DBUtility.csproj.CoreCompileInputs.cache
+D:\鸿坤代码\鸿坤源码20191025\DBUtility\obj\Release\DBUtility.dll
+D:\鸿坤代码\鸿坤源码20191025\DBUtility\obj\Release\DBUtility.pdb

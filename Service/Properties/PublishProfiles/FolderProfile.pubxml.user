@@ -1,0 +1,571 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+此文件由 Web 项目的发布/打包过程使用。可以通过编辑此 MSBuild 文件
+自定义此过程的行为。为了解与此相关的更多内容，请访问 https://go.microsoft.com/fwlink/?LinkID=208121。 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>E:\本地发布\wuye</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="AlipayCallBack/Alipay.ashx">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="AlipayCallBack/AlipayBuss.ashx">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="AlipayCallBack/AlipayBuss_lf.ashx">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="AlipayCallBack/AliPayPrec.ashx">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="AlipayCallBack/AliPayPrec_lf.ashx">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="AlipayCallBack/AliPayPrec_MJ.ashx">
+      <publishTime>05/09/2019 15:26:07</publishTime>
+    </File>
+    <File Include="AlipayCallBack/Alipay_MJ.ashx">
+      <publishTime>05/09/2019 15:26:07</publishTime>
+    </File>
+    <File Include="AlipayCallBack/Alipay_Xxw.ashx">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="AllinPayCallBack/AllinPay.ashx">
+      <publishTime>05/09/2019 15:26:07</publishTime>
+    </File>
+    <File Include="AllinPayCallBack/AllinPayPrec.ashx">
+      <publishTime>05/09/2019 15:26:07</publishTime>
+    </File>
+    <File Include="AllinPayCallBack/AllinPay_hy.ashx">
+      <publishTime>05/28/2019 09:36:31</publishTime>
+    </File>
+    <File Include="AllinPayCallBack/AllinPay_poly.ashx">
+      <publishTime>06/24/2019 10:08:44</publishTime>
+    </File>
+    <File Include="Api.ashx">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="BGYPost.ashx">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="BGYPOSTService.ashx">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="bin/AGConnectAdmin.dll">
+      <publishTime>01/06/2021 14:18:26</publishTime>
+    </File>
+    <File Include="bin/aliyun-net-sdk-core.dll">
+      <publishTime>09/12/2019 13:41:14</publishTime>
+    </File>
+    <File Include="bin/Aliyun.OSS.dll">
+      <publishTime>05/09/2019 15:26:01</publishTime>
+    </File>
+    <File Include="bin/allinpay.utils.dll">
+      <publishTime>07/03/2019 14:31:02</publishTime>
+    </File>
+    <File Include="bin/AopSdk.dll">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="bin/BLL.dll">
+      <publishTime>01/11/2021 16:41:58</publishTime>
+    </File>
+    <File Include="bin/BLL.dll.config">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="bin/BLL.pdb">
+      <publishTime>01/11/2021 16:41:58</publishTime>
+    </File>
+    <File Include="bin/BOCOMSDK.dll">
+      <publishTime>08/21/2019 16:51:25</publishTime>
+    </File>
+    <File Include="bin/BouncyCastle.Crypto.dll">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="bin/Business.dll">
+      <publishTime>01/11/2021 17:52:15</publishTime>
+    </File>
+    <File Include="bin/Business.dll.config">
+      <publishTime>01/11/2021 13:43:25</publishTime>
+    </File>
+    <File Include="bin/Business.XmlSerializers.dll">
+      <publishTime>01/11/2021 17:52:16</publishTime>
+    </File>
+    <File Include="bin/CCBRSA.dll">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="bin/cebpay.utils.dll">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="bin/cebpay.utils.dll.config">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="bin/cebpay.utils.pdb">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="bin/CMBCSDKDLL.dll">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="bin/cn.jpush.api.dll">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="bin/Common.dll">
+      <publishTime>01/11/2021 16:41:59</publishTime>
+    </File>
+    <File Include="bin/Common.dll.config">
+      <publishTime>01/11/2021 13:43:25</publishTime>
+    </File>
+    <File Include="bin/Common.pdb">
+      <publishTime>01/11/2021 16:41:59</publishTime>
+    </File>
+    <File Include="bin/Common.XmlSerializers.dll">
+      <publishTime>01/11/2021 16:41:59</publishTime>
+    </File>
+    <File Include="bin/Dal.dll">
+      <publishTime>01/11/2021 16:41:57</publishTime>
+    </File>
+    <File Include="bin/Dal.dll.config">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="bin/Dal.pdb">
+      <publishTime>01/11/2021 16:41:57</publishTime>
+    </File>
+    <File Include="bin/Dapper.dll">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="bin/DapperExtensions.dll">
+      <publishTime>01/11/2021 16:41:56</publishTime>
+    </File>
+    <File Include="bin/DapperExtensions.pdb">
+      <publishTime>01/11/2021 16:41:56</publishTime>
+    </File>
+    <File Include="bin/DBUtility.dll">
+      <publishTime>01/11/2021 16:41:55</publishTime>
+    </File>
+    <File Include="bin/DBUtility.dll.config">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="bin/DBUtility.pdb">
+      <publishTime>01/11/2021 16:41:55</publishTime>
+    </File>
+    <File Include="bin/DLLLibs/SADK.CMBC.x64.dll">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="bin/DLLLibs/SADK.CMBC.x86.dll">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="bin/EACPSO.dll">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="bin/Excel.dll">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="bin/ICSharpCode.SharpZipLib.dll">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="bin/IKVM.OpenJDK.Core.dll">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="bin/IKVM.OpenJDK.Security.dll">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="bin/IKVM.Runtime.dll">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="bin/jose-jwt.dll">
+      <publishTime>08/01/2016 23:59:50</publishTime>
+    </File>
+    <File Include="bin/JWT.dll">
+      <publishTime>03/22/2018 17:59:26</publishTime>
+    </File>
+    <File Include="bin/KernelDev.dll">
+      <publishTime>01/11/2021 16:41:55</publishTime>
+    </File>
+    <File Include="bin/KernelDev.pdb">
+      <publishTime>01/11/2021 16:41:55</publishTime>
+    </File>
+    <File Include="bin/LitJson.dll">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="bin/log4net.config">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="bin/log4net.dll">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="bin/LTP.Common.dll">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Vbe.Interop.dll">
+      <publishTime>03/31/2015 15:56:02</publishTime>
+    </File>
+    <File Include="bin/Model.dll">
+      <publishTime>01/11/2021 16:41:56</publishTime>
+    </File>
+    <File Include="bin/Model.pdb">
+      <publishTime>01/11/2021 16:41:56</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>11/09/2019 00:56:44</publishTime>
+    </File>
+    <File Include="bin/office.dll">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="bin/Service.dll">
+      <publishTime>01/11/2021 17:52:20</publishTime>
+    </File>
+    <File Include="bin/Service.pdb">
+      <publishTime>01/11/2021 17:52:20</publishTime>
+    </File>
+    <File Include="bin/stdole.dll">
+      <publishTime>11/13/2019 10:20:56</publishTime>
+    </File>
+    <File Include="bin/System.ValueTuple.dll">
+      <publishTime>05/15/2018 13:29:52</publishTime>
+    </File>
+    <File Include="bin/TaiHeSmsSdk.dll">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="bin/TrustPayClient.dll">
+      <publishTime>05/09/2019 15:26:02</publishTime>
+    </File>
+    <File Include="bin/TWTools.dll">
+      <publishTime>01/11/2021 16:41:55</publishTime>
+    </File>
+    <File Include="bin/TWTools.dll.config">
+      <publishTime>01/11/2021 13:39:38</publishTime>
+    </File>
+    <File Include="bin/TWTools.pdb">
+      <publishTime>01/11/2021 16:41:55</publishTime>
+    </File>
+    <File Include="bin/UnionInvoice.dll">
+      <publishTime>05/09/2019 15:26:01</publishTime>
+    </File>
+    <File Include="bin/unionqmf.utils.dll">
+      <publishTime>12/07/2020 10:33:44</publishTime>
+    </File>
+    <File Include="bin/UnionQmfPaySdk.dll">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="bin/wxpay.utils.dll">
+      <publishTime>09/11/2020 09:12:09</publishTime>
+    </File>
+    <File Include="BusinessDetailsCss/BusinessDetails.css">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="BusinessDetailsCss/flickerplate.css">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="BusinessDetailsHtml/BusinessDetails.aspx">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="BusinessDetailsHtml/BusinessDetails2.html">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="CebPayCallBack/CebPay.ashx">
+      <publishTime>07/19/2019 17:36:34</publishTime>
+    </File>
+    <File Include="CebPayCallBack/CebPayBuss.ashx">
+      <publishTime>07/22/2019 16:03:49</publishTime>
+    </File>
+    <File Include="CMBCPayCallBack/Notify.ashx">
+      <publishTime>05/29/2019 14:39:27</publishTime>
+    </File>
+    <File Include="EInvoiceCallBack/EInvoiceErr_BGY.ashx">
+      <publishTime>05/09/2019 15:26:07</publishTime>
+    </File>
+    <File Include="EInvoiceCallBack/EInvoice_BGY.ashx">
+      <publishTime>05/09/2019 15:26:07</publishTime>
+    </File>
+    <File Include="EInvoiceCallBack/EInvoice_HNC.ashx">
+      <publishTime>07/22/2019 17:56:35</publishTime>
+    </File>
+    <File Include="ErpUploadFile.ashx">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="Files.ashx">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="HJCRM_Service.asmx">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="HKCCBPayCallBack/HKCCBPay.ashx">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="HKLogin.ashx">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="HKService.ashx">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="HongKun/css/bootstrap.min.css">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="HongKun/css/desktop_new.css">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="HongKun/DataRequest.ashx">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="HongKun/dynamic_charge.aspx">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="HongKun/dynamic_equipment.aspx">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="HongKun/dynamic_personal.aspx">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="HongKun/dynamic_quality.aspx">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="HongKun/dynamic_resource.aspx">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="HongKun/dynamic_service.aspx">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="HongKun/img/ic_first.png">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="HongKun/img/ic_last.png">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="HongKun/img/ic_next.png">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="HongKun/img/ic_previous.png">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="HongKun/js/bootstrap.min.js">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="HongKun/js/echarts.js">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="HongKun/js/jquery.min.js">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="HongKun/js/map/china.js">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="HongKun/OpenSans-Light.ttf">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="HongKun/OpenSans-Regular.ttf">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="Images/1.png">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="Images/10.png">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="Images/2.png">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="Images/3.png">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="Images/4.png">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="Images/9.png">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="Images/alipay.png">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="Images/arrow-left-dark.png">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="Images/arrow-left-light.png">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="Images/arrow-right-dark.png">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="Images/arrow-right-light.png">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="Images/arrows.png">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="Images/cashpay.png">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="Images/circle/diannaoshuma.png">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="Images/circle/huwailvyou.png">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="Images/circle/jiankangmeirong.png">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="Images/circle/qinziyuer.png">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="Images/circle/qipaiyouxi.png">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="Images/circle/shiwuzhaoling.png">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="Images/circle/tanhunlunjia.png">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="Images/circle/xiaoqugongjian.png">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="Images/market/chongwuyongpin.png">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="Images/market/ertongwanju.png">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="Images/market/jiayongdianqi.png">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="Images/market/meizhuangliren.png">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="Images/market/nannvtongzhuang.png">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="Images/market/shenghuobaihuo.png">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="Images/market/shoujishuma.png">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="Images/market/yundonghuwai.png">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="Images/unionpay.png">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="Images/wchatpay.png">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="Images/x1.png">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="Images/x2.png">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="Images/x3.png">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="Images/x4.png">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="Images/x5.png">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="JDPayCallBack/JDPay.ashx">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="JHService.ashx">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="Jsscipt-UI/flickerplate.min.js">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="Jsscipt-UI/jquery-1.8.3.min.js">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="Jsscipt-UI/jquery-1.9.1.js">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="Jsscipt-UI/jquery-finger-v0.1.0.min.js">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="Jsscipt-UI/jquery-ui-1.10.2.custom.js">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="Jsscipt-UI/jquery-ui-1.10.2.custom.min.js">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="Jsscipt-UI/modernizr-custom-v2.7.1.min.js">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="log4net.config">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="NoticeDetailInfo.aspx">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="Point/Rules.aspx">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="PSOSetting.config">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="Service.ashx">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="TrustPayCallBack/TrustPay.ashx">
+      <publishTime>05/09/2019 15:26:07</publishTime>
+    </File>
+    <File Include="UnionPayCallBack/PayOk.aspx">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="UnionPayCallBack/UnionPay.ashx">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="UnionPayCallBack/UnionPayBuss.ashx">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="UnionPayCallBack/UnionPayPrec.ashx">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="UnionPayCallBack/UnionPay_Xxw.ashx">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="UnionQmfCallBack/UnionQmf.ashx">
+      <publishTime>05/09/2019 15:26:07</publishTime>
+    </File>
+    <File Include="Update.aspx">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="Visit/Guide.aspx">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>01/11/2021 16:42:09</publishTime>
+    </File>
+    <File Include="Webhook/Bugly.ashx">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="WeiXinPayCallBack/WeiXinPay.ashx">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="WeiXinPayCallBack/WeiXinPayBuss.ashx">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="WeiXinPayCallBack/WeiXinPayBuss_lf.ashx">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="WeiXinPayCallBack/WeiXinPayPrec.ashx">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="WeiXinPayCallBack/WeiXinPayPrec_lf.ashx">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="WeiXinPayCallBack/WeiXinPay_New.ashx">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="WeiXinPayCallBack/WeiXinPay_Xxw.ashx">
+      <publishTime>10/18/2020 07:44:58</publishTime>
+    </File>
+    <File Include="WftPayCallBack/WftPay.ashx">
+      <publishTime>05/09/2019 15:26:08</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,499 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.Net.Compilers.3.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.3.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FEB1BE7F-E0E3-457B-88B1-49BFEABAB6FB}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Service</RootNamespace>
+    <AssemblyName>Service</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+    <Use64BitIISExpress>true</Use64BitIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="allinpay.utils">
+      <HintPath>..\Business\DLLLibs\allinpay.utils.dll</HintPath>
+    </Reference>
+    <Reference Include="cebpay.utils">
+      <HintPath>..\Business\DLLLibs\cebpay.utils.dll</HintPath>
+    </Reference>
+    <Reference Include="CMBCSDKDLL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Business\DLLLibs\CMBCSDKDLL.dll</HintPath>
+    </Reference>
+    <Reference Include="Dapper, Version=1.50.5.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dapper.1.50.5\lib\net451\Dapper.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="TrustPayClient, Version=1.0.2.18916, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Business\日照农行支付\Libs\TrustPayClient.dll</HintPath>
+    </Reference>
+    <Reference Include="UnionQmfPaySdk, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Business\DLLLibs\UnionQmfPaySdk.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Point\Rules.aspx" />
+    <Content Include="BusinessDetailsCss\BusinessDetails.css" />
+    <Content Include="BusinessDetailsCss\flickerplate.css" />
+    <Content Include="BusinessDetailsHtml\BusinessDetails2.html" />
+    <Content Include="BusinessDetailsHtml\BusinessDetails.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="HJCRM_Service.asmx" />
+    <Content Include="HongKun\css\bootstrap.min.css" />
+    <Content Include="HongKun\css\desktop_new.css" />
+    <Content Include="HongKun\dynamic_charge.aspx" />
+    <Content Include="HongKun\dynamic_equipment.aspx" />
+    <Content Include="HongKun\dynamic_personal.aspx" />
+    <Content Include="HongKun\dynamic_quality.aspx" />
+    <Content Include="HongKun\dynamic_resource.aspx" />
+    <Content Include="HongKun\dynamic_service.aspx" />
+    <Content Include="HongKun\img\ic_first.png" />
+    <Content Include="HongKun\img\ic_last.png" />
+    <Content Include="HongKun\img\ic_next.png" />
+    <Content Include="HongKun\img\ic_previous.png" />
+    <Content Include="HongKun\js\bootstrap.min.js" />
+    <Content Include="HongKun\js\echarts.js" />
+    <Content Include="HongKun\js\jquery.min.js" />
+    <Content Include="HongKun\js\map\china.js" />
+    <Content Include="Images\1.png" />
+    <Content Include="Images\10.png" />
+    <Content Include="Images\2.png" />
+    <Content Include="Images\3.png" />
+    <Content Include="Images\4.png" />
+    <Content Include="Images\9.png" />
+    <Content Include="Images\alipay.png" />
+    <Content Include="Images\arrow-left-dark.png" />
+    <Content Include="Images\arrow-left-light.png" />
+    <Content Include="Images\arrow-right-dark.png" />
+    <Content Include="Images\arrow-right-light.png" />
+    <Content Include="Images\arrows.png" />
+    <Content Include="Images\cashpay.png" />
+    <Content Include="Images\circle\diannaoshuma.png" />
+    <Content Include="Images\circle\huwailvyou.png" />
+    <Content Include="Images\circle\jiankangmeirong.png" />
+    <Content Include="Images\circle\qinziyuer.png" />
+    <Content Include="Images\circle\qipaiyouxi.png" />
+    <Content Include="Images\circle\shiwuzhaoling.png" />
+    <Content Include="Images\circle\tanhunlunjia.png" />
+    <Content Include="Images\circle\xiaoqugongjian.png" />
+    <Content Include="Images\market\chongwuyongpin.png" />
+    <Content Include="Images\market\ertongwanju.png" />
+    <Content Include="Images\market\jiayongdianqi.png" />
+    <Content Include="Images\market\meizhuangliren.png" />
+    <Content Include="Images\market\nannvtongzhuang.png" />
+    <Content Include="Images\market\shenghuobaihuo.png" />
+    <Content Include="Images\market\shoujishuma.png" />
+    <Content Include="Images\market\yundonghuwai.png" />
+    <Content Include="Images\unionpay.png" />
+    <Content Include="Images\wchatpay.png" />
+    <Content Include="Images\x1.png" />
+    <Content Include="Images\x2.png" />
+    <Content Include="Images\x3.png" />
+    <Content Include="Images\x4.png" />
+    <Content Include="Images\x5.png" />
+    <Content Include="Jsscipt-UI\flickerplate.min.js" />
+    <Content Include="Jsscipt-UI\jquery-1.8.3.min.js" />
+    <Content Include="Jsscipt-UI\jquery-1.9.1.js" />
+    <Content Include="Jsscipt-UI\jquery-finger-v0.1.0.min.js" />
+    <Content Include="Jsscipt-UI\jquery-ui-1.10.2.custom.js" />
+    <Content Include="Jsscipt-UI\jquery-ui-1.10.2.custom.min.js" />
+    <Content Include="Jsscipt-UI\modernizr-custom-v2.7.1.min.js" />
+    <Content Include="NoticeDetailInfo.aspx" />
+    <Content Include="UnionPayCallBack\PayOk.aspx" />
+    <Content Include="Service.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AlipayCallBack\Alipay.ashx.cs">
+      <DependentUpon>Alipay.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="AlipayCallBack\AlipayBuss_lf.ashx.cs">
+      <DependentUpon>AlipayBuss_lf.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="AlipayCallBack\AlipayBuss.ashx.cs">
+      <DependentUpon>AlipayBuss.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="AlipayCallBack\AliPayPrec.ashx.cs">
+      <DependentUpon>AliPayPrec.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="AlipayCallBack\AliPayPrec_lf.ashx.cs" />
+    <Compile Include="AlipayCallBack\Alipay_Xxw.ashx.cs">
+      <DependentUpon>Alipay_Xxw.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Api.ashx.cs">
+      <DependentUpon>Api.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="HKLogin.ashx.cs">
+      <DependentUpon>HKLogin.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="HKService.ashx.cs">
+      <DependentUpon>HKService.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="JDPayCallBack\JDPay.ashx.cs">
+      <DependentUpon>JDPay.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="JHService.ashx.cs">
+      <DependentUpon>JHService.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Point\Rules.aspx.cs">
+      <DependentUpon>Rules.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Point\Rules.aspx.designer.cs">
+      <DependentUpon>Rules.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BGYPost.ashx.cs">
+      <DependentUpon>BGYPost.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="BGYPOSTService.ashx.cs">
+      <DependentUpon>BGYPOSTService.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessDetailsHtml\BusinessDetails.aspx.cs">
+      <DependentUpon>BusinessDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusinessDetailsHtml\BusinessDetails.aspx.designer.cs">
+      <DependentUpon>BusinessDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ErpUploadFile.ashx.cs">
+      <DependentUpon>ErpUploadFile.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="HJCRM_Service.asmx.cs">
+      <DependentUpon>HJCRM_Service.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="HKCCBPayCallBack\HKCCBPay.ashx.cs">
+      <DependentUpon>HKCCBPay.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="HongKun\BasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HongKun\DataRequest.ashx.cs">
+      <DependentUpon>DataRequest.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="HongKun\dynamic_charge.aspx.cs">
+      <DependentUpon>dynamic_charge.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HongKun\dynamic_charge.aspx.designer.cs">
+      <DependentUpon>dynamic_charge.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HongKun\dynamic_equipment.aspx.cs">
+      <DependentUpon>dynamic_equipment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HongKun\dynamic_equipment.aspx.designer.cs">
+      <DependentUpon>dynamic_equipment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HongKun\dynamic_personal.aspx.cs">
+      <DependentUpon>dynamic_personal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HongKun\dynamic_personal.aspx.designer.cs">
+      <DependentUpon>dynamic_personal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HongKun\dynamic_quality.aspx.cs">
+      <DependentUpon>dynamic_quality.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HongKun\dynamic_quality.aspx.designer.cs">
+      <DependentUpon>dynamic_quality.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HongKun\dynamic_resource.aspx.cs">
+      <DependentUpon>dynamic_resource.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HongKun\dynamic_resource.aspx.designer.cs">
+      <DependentUpon>dynamic_resource.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HongKun\dynamic_service.aspx.cs">
+      <DependentUpon>dynamic_service.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HongKun\dynamic_service.aspx.designer.cs">
+      <DependentUpon>dynamic_service.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NoticeDetailInfo.aspx.cs">
+      <DependentUpon>NoticeDetailInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NoticeDetailInfo.aspx.designer.cs">
+      <DependentUpon>NoticeDetailInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UnionPayCallBack\PayOk.aspx.cs">
+      <DependentUpon>PayOk.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UnionPayCallBack\PayOk.aspx.designer.cs">
+      <DependentUpon>PayOk.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UnionPayCallBack\UnionPay.ashx.cs">
+      <DependentUpon>UnionPay.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Files.ashx.cs">
+      <DependentUpon>Files.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Service.ashx.cs">
+      <DependentUpon>Service.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="UnionPayCallBack\UnionPayBuss.ashx.cs">
+      <DependentUpon>UnionPayBuss.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="UnionPayCallBack\UnionPayPrec.ashx.cs">
+      <DependentUpon>UnionPayPrec.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="UnionPayCallBack\UnionPay_Xxw.ashx.cs">
+      <DependentUpon>UnionPay_Xxw.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Update.aspx.cs">
+      <DependentUpon>Update.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Update.aspx.designer.cs">
+      <DependentUpon>Update.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Visit\Guide.aspx.cs">
+      <DependentUpon>Guide.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Visit\Guide.aspx.designer.cs">
+      <DependentUpon>Guide.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Webhook\Bugly.ashx.cs">
+      <DependentUpon>Bugly.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="WeiXinPayCallBack\WeiXinPay.ashx.cs">
+      <DependentUpon>WeiXinPay.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="WeiXinPayCallBack\WeiXinPayBuss_lf.ashx.cs">
+      <DependentUpon>WeiXinPayBuss_lf.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="WeiXinPayCallBack\WeiXinPayBuss.ashx.cs">
+      <DependentUpon>WeiXinPayBuss.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="WeiXinPayCallBack\WeiXinPayPrec.ashx.cs">
+      <DependentUpon>WeiXinPayPrec.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="WeiXinPayCallBack\WeiXinPayPrec_lf.ashx.cs">
+      <DependentUpon>WeiXinPayPrec_lf.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="WeiXinPayCallBack\WeiXinPay_New.ashx.cs">
+      <DependentUpon>WeiXinPay_New.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="WeiXinPayCallBack\WeiXinPay_Xxw.ashx.cs">
+      <DependentUpon>WeiXinPay_Xxw.ashx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\Bll.csproj">
+      <Project>{639a3c6a-1853-4880-a659-12bd9f60da24}</Project>
+      <Name>Bll</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Business\Business.csproj">
+      <Project>{60fc330a-b51a-49c8-be33-a5b9ba9c53ae}</Project>
+      <Name>Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{9a3d9fcd-5eda-47b8-b418-e65a9831fac3}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dal\Dal.csproj">
+      <Project>{b6e58338-2a20-4b68-aba2-66d1e2be3dfd}</Project>
+      <Name>Dal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dapper\DapperExtensions\DapperExtensions.csproj">
+      <Project>{4c1a2c6c-a469-4c87-98d1-f1d517fa1acf}</Project>
+      <Name>DapperExtensions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DBUtility\DBUtility.csproj">
+      <Project>{17e9e55f-7f10-4a7a-9b64-be1fccdade82}</Project>
+      <Name>DBUtility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KernelDev\KernelDev.csproj">
+      <Project>{8d9a171a-4350-43cf-93bc-727e708bd6ae}</Project>
+      <Name>KernelDev</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{47e6469c-8c61-4d60-93fa-bdf122da4322}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Update.aspx" />
+    <Content Include="Files.ashx" />
+    <Content Include="UnionPayCallBack\UnionPay.ashx" />
+    <Content Include="log4net.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="AlipayCallBack\Alipay.ashx" />
+    <Content Include="UnionPayCallBack\UnionPayPrec.ashx" />
+    <Content Include="AlipayCallBack\AliPayPrec.ashx" />
+    <Content Include="AlipayCallBack\AlipayBuss.ashx" />
+    <Content Include="UnionPayCallBack\UnionPayBuss.ashx" />
+    <Content Include="ErpUploadFile.ashx" />
+    <Content Include="AlipayCallBack\Alipay_Xxw.ashx" />
+    <Content Include="UnionPayCallBack\UnionPay_Xxw.ashx" />
+    <Content Include="BGYPOSTService.ashx" />
+    <Content Include="HongKun\OpenSans-Light.ttf" />
+    <Content Include="HongKun\OpenSans-Regular.ttf" />
+    <Content Include="BGYPost.ashx" />
+    <Content Include="HongKun\DataRequest.ashx" />
+    <Content Include="HKCCBPayCallBack\HKCCBPay.ashx" />
+    <Content Include="AlipayCallBack\AlipayBuss_lf.ashx" />
+    <Content Include="AlipayCallBack\AliPayPrec_lf.ashx" />
+    <Content Include="Api.ashx" />
+    <Content Include="JHService.ashx" />
+    <Content Include="HKService.ashx" />
+    <Content Include="HKLogin.ashx" />
+    <Content Include="JDPayCallBack\JDPay.ashx" />
+    <None Include="packages.config" />
+    <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <Content Include="Visit\Guide.aspx" />
+    <Content Include="WeiXinPayCallBack\WeiXinPay.ashx" />
+    <Content Include="WeiXinPayCallBack\WeiXinPayPrec.ashx" />
+    <Content Include="WeiXinPayCallBack\WeiXinPayBuss.ashx" />
+    <Content Include="WeiXinPayCallBack\WeiXinPay_Xxw.ashx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="PSOSetting.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="Webhook\Bugly.ashx" />
+    <Content Include="WeiXinPayCallBack\WeiXinPayBuss_lf.ashx" />
+    <Content Include="WeiXinPayCallBack\WeiXinPayPrec_lf.ashx" />
+    <Content Include="WeiXinPayCallBack\WeiXinPay_New.ashx" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>63305</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:63305/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>这台计算机上缺少此项目引用的 NuGet 程序包。使用“NuGet 程序包还原”可下载这些程序包。有关更多信息，请参见 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的文件是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.3.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.3.0.0\build\Microsoft.Net.Compilers.props'))" />
+  </Target>
+</Project>

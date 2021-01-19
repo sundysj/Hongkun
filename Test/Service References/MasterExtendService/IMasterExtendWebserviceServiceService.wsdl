@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://webservice.extend.master.kmss.landray.com/" xmlns:ns1="http://schemas.xmlsoap.org/soap/http" name="IMasterExtendWebserviceServiceService" targetNamespace="http://webservice.extend.master.kmss.landray.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://webservice.extend.master.kmss.landray.com/">
+      <xsd:complexType name="Exception">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="message" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="Exception" type="tns:Exception" />
+      <xsd:element name="getInfoByIndentify" type="tns:getInfoByIndentify" />
+      <xsd:complexType name="getInfoByIndentify">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="paramJson" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="getInfoByIndentifyResponse" type="tns:getInfoByIndentifyResponse" />
+      <xsd:complexType name="getInfoByIndentifyResponse">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="return" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="getInfoByIndentifyResponse">
+    <wsdl:part name="parameters" element="tns:getInfoByIndentifyResponse" />
+  </wsdl:message>
+  <wsdl:message name="Exception">
+    <wsdl:part name="Exception" element="tns:Exception" />
+  </wsdl:message>
+  <wsdl:message name="getInfoByIndentify">
+    <wsdl:part name="parameters" element="tns:getInfoByIndentify" />
+  </wsdl:message>
+  <wsdl:portType name="IMasterExtendWebserviceService">
+    <wsdl:operation name="getInfoByIndentify">
+      <wsdl:input name="getInfoByIndentify" message="tns:getInfoByIndentify" />
+      <wsdl:output name="getInfoByIndentifyResponse" message="tns:getInfoByIndentifyResponse" />
+      <wsdl:fault name="Exception" message="tns:Exception" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="IMasterExtendWebserviceServiceServiceSoapBinding" type="tns:IMasterExtendWebserviceService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getInfoByIndentify">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getInfoByIndentify">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getInfoByIndentifyResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="IMasterExtendWebserviceServiceService">
+    <wsdl:port name="IMasterExtendWebserviceServicePort" binding="tns:IMasterExtendWebserviceServiceServiceSoapBinding">
+      <soap:address location="http://testoa.newhopegroup.com:8091/sys/webservice/masterExtendWebserviceService" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

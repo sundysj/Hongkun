@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://service.hk.huayunworld.com/" xmlns:ns1="http://schemas.xmlsoap.org/soap/http" name="hkserviceImplService" targetNamespace="http://service.hk.huayunworld.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xs:schema elementFormDefault="unqualified" targetNamespace="http://service.hk.huayunworld.com/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="customInfoSynchronize" type="tns:customInfoSynchronize" />
+      <xs:element name="customInfoSynchronizeResponse" type="tns:customInfoSynchronizeResponse" />
+      <xs:element name="familyMemberSynchronize" type="tns:familyMemberSynchronize" />
+      <xs:element name="familyMemberSynchronizeResponse" type="tns:familyMemberSynchronizeResponse" />
+      <xs:element name="roomInfoSynchronize" type="tns:roomInfoSynchronize" />
+      <xs:element name="roomInfoSynchronizeResponse" type="tns:roomInfoSynchronizeResponse" />
+      <xs:element name="workFollowSynchronize" type="tns:workFollowSynchronize" />
+      <xs:element name="workFollowSynchronizeResponse" type="tns:workFollowSynchronizeResponse" />
+      <xs:element name="workOrderInfoSynchronize" type="tns:workOrderInfoSynchronize" />
+      <xs:element name="workOrderInfoSynchronizeResponse" type="tns:workOrderInfoSynchronizeResponse" />
+      <xs:element name="workOrderStatusSynchronize" type="tns:workOrderStatusSynchronize" />
+      <xs:element name="workOrderStatusSynchronizeResponse" type="tns:workOrderStatusSynchronizeResponse" />
+      <xs:complexType name="workOrderInfoSynchronize">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="workOrderInfoSynchronizeResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="customInfoSynchronize">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="customInfoSynchronizeResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="roomInfoSynchronize">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="roomInfoSynchronizeResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="workOrderStatusSynchronize">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="workOrderStatusSynchronizeResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="familyMemberSynchronize">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="familyMemberSynchronizeResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="workFollowSynchronize">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="workFollowSynchronizeResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="workOrderInfoSynchronize">
+    <wsdl:part name="parameters" element="tns:workOrderInfoSynchronize" />
+  </wsdl:message>
+  <wsdl:message name="familyMemberSynchronizeResponse">
+    <wsdl:part name="parameters" element="tns:familyMemberSynchronizeResponse" />
+  </wsdl:message>
+  <wsdl:message name="workOrderInfoSynchronizeResponse">
+    <wsdl:part name="parameters" element="tns:workOrderInfoSynchronizeResponse" />
+  </wsdl:message>
+  <wsdl:message name="workOrderStatusSynchronizeResponse">
+    <wsdl:part name="parameters" element="tns:workOrderStatusSynchronizeResponse" />
+  </wsdl:message>
+  <wsdl:message name="customInfoSynchronize">
+    <wsdl:part name="parameters" element="tns:customInfoSynchronize" />
+  </wsdl:message>
+  <wsdl:message name="customInfoSynchronizeResponse">
+    <wsdl:part name="parameters" element="tns:customInfoSynchronizeResponse" />
+  </wsdl:message>
+  <wsdl:message name="roomInfoSynchronize">
+    <wsdl:part name="parameters" element="tns:roomInfoSynchronize" />
+  </wsdl:message>
+  <wsdl:message name="roomInfoSynchronizeResponse">
+    <wsdl:part name="parameters" element="tns:roomInfoSynchronizeResponse" />
+  </wsdl:message>
+  <wsdl:message name="workFollowSynchronizeResponse">
+    <wsdl:part name="parameters" element="tns:workFollowSynchronizeResponse" />
+  </wsdl:message>
+  <wsdl:message name="workOrderStatusSynchronize">
+    <wsdl:part name="parameters" element="tns:workOrderStatusSynchronize" />
+  </wsdl:message>
+  <wsdl:message name="familyMemberSynchronize">
+    <wsdl:part name="parameters" element="tns:familyMemberSynchronize" />
+  </wsdl:message>
+  <wsdl:message name="workFollowSynchronize">
+    <wsdl:part name="parameters" element="tns:workFollowSynchronize" />
+  </wsdl:message>
+  <wsdl:portType name="hkservice">
+    <wsdl:operation name="workOrderInfoSynchronize">
+      <wsdl:input name="workOrderInfoSynchronize" message="tns:workOrderInfoSynchronize" />
+      <wsdl:output name="workOrderInfoSynchronizeResponse" message="tns:workOrderInfoSynchronizeResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="customInfoSynchronize">
+      <wsdl:input name="customInfoSynchronize" message="tns:customInfoSynchronize" />
+      <wsdl:output name="customInfoSynchronizeResponse" message="tns:customInfoSynchronizeResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="roomInfoSynchronize">
+      <wsdl:input name="roomInfoSynchronize" message="tns:roomInfoSynchronize" />
+      <wsdl:output name="roomInfoSynchronizeResponse" message="tns:roomInfoSynchronizeResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="workOrderStatusSynchronize">
+      <wsdl:input name="workOrderStatusSynchronize" message="tns:workOrderStatusSynchronize" />
+      <wsdl:output name="workOrderStatusSynchronizeResponse" message="tns:workOrderStatusSynchronizeResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="familyMemberSynchronize">
+      <wsdl:input name="familyMemberSynchronize" message="tns:familyMemberSynchronize" />
+      <wsdl:output name="familyMemberSynchronizeResponse" message="tns:familyMemberSynchronizeResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="workFollowSynchronize">
+      <wsdl:input name="workFollowSynchronize" message="tns:workFollowSynchronize" />
+      <wsdl:output name="workFollowSynchronizeResponse" message="tns:workFollowSynchronizeResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="hkserviceImplServiceSoapBinding" type="tns:hkservice">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="workOrderInfoSynchronize">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="workOrderInfoSynchronize">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="workOrderInfoSynchronizeResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="customInfoSynchronize">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="customInfoSynchronize">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="customInfoSynchronizeResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="roomInfoSynchronize">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="roomInfoSynchronize">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="roomInfoSynchronizeResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="workOrderStatusSynchronize">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="workOrderStatusSynchronize">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="workOrderStatusSynchronizeResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="familyMemberSynchronize">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="familyMemberSynchronize">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="familyMemberSynchronizeResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="workFollowSynchronize">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="workFollowSynchronize">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="workFollowSynchronizeResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="hkserviceImplService">
+    <wsdl:port name="hkserviceImplPort" binding="tns:hkserviceImplServiceSoapBinding">
+      <soap:address location="http://10.65.24.16:8080/HK/service/hk" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

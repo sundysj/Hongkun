@@ -1,0 +1,99 @@
+﻿<?xml version="1.0"?>
+<configuration>
+  <appSettings>
+    <!--老版本图片需要拼接的URL-->
+    <add key="ImageFileAddr" value="http://125.64.16.10/"/>
+
+    <!-- 业主头像 -->
+    <add key="OwnerTaskFilesPath" value="D:\wwwroot\HM\M_Main\images\Owner\"/>
+    <add key="OwnerTaskFilesPathRela" value="http://125.64.16.10/HM/M_main/images/Owner/"/>
+    <!-- 品质设备文件 -->
+    <add key="QualityTaskFilesPath" value="D:\wwwroot\HM\M_Main\images\Quality\"/>
+    <add key="QualityTaskFilesPathRela" value="http://125.64.16.10/HM/M_main/images/Quality/"/>
+    <!-- 装修巡查、离线验房文件 -->
+    <add key="HouseFilesPath" value="D:\wwwroot\HM\M_Main\images\HouseFiles\"/>
+    <add key="HouseFilesPathRela" value="http://125.64.16.10/HM/M_main/images/HouseFiles/"/>
+    <!-- 综合巡查文件 -->
+    <add key="ComprehensiveInspectionFilesPath" value="D:\wwwroot\HM\M_Main\images\ComprehensiveInspection\"/>
+    <add key="ComprehensiveInspectionFilesPathRela" value="http://125.64.16.10/HM/M_main/images/ComprehensiveInspection/"/>
+    <!--业主报事图片存放地址-->
+    <add key="IncidentAcceptTaskFilesPath" value="D:\wwwroot\HM\M_Main\images\IncidentAccept\"/>
+    <add key="IncidentAcceptTaskFilesPathRela" value="http://125.64.16.10/HM/M_main/images/IncidentAccept/"/>
+    <!-- 跳蚤市场图片 -->
+    <add key="BBSSecondHandMarketFilesPath" value="D:\wwwroot\HM\M_Main\images\SecondHandMarket\"/>
+    <add key="BBSSecondHandMarketFilesPathRela" value="http://125.64.16.10/HM/M_main/images/SecondHandMarket/"/>
+    <!-- 社区聊吧图片 -->
+    <add key="BBSChatBarFilesPath" value="D:\wwwroot\HM\M_Main\images\ChatBar\"/>
+    <add key="BBSChatBarFilesPathRela" value="http://125.64.16.10/HM/M_main/images/ChatBar/"/>
+    <!-- 社区圈子图片 -->
+    <add key="BBSCircleFilesPath" value="D:\wwwroot\HM\M_Main\images\Circle\"/>
+    <add key="BBSCircleFilesPathRela" value="http://125.64.16.10/HM/M_main/images/Circle/"/>
+    <!-- 邀请住户身份证 -->
+    <add key="InviteUserIDCardFilesPath" value="D:\wwwroot\HM\M_Main\images\IDCard\"/>
+    <add key="InviteUserIDCardFilesPathRela" value="http://125.64.16.10/HM/M_main/images/IDCard/"/>
+    <!-- 保利文件上传 -->
+    <add key="Bl_FileUploadUrl" value="http://47.107.176.138:82/FileUpload.aspx"/>
+    <add key="Bl_FileUploadServicesUrl" value="http://47.107.176.138:82/"/>
+    <!-- 支付宝支付回调地址 -->
+    <add key="AliPay_Notify_Url" value="http://125.64.16.10:9999/TWInterface/Service/AlipayCallBack/AliPay.ashx"/>
+    <add key="AliPayPrec_Notify_Url" value="http://125.64.16.10:9999/TWInterface/Service/AlipayCallBack/AliPayPrec.ashx"/>
+    <add key="AliPayBuss_Notify_Url" value="http://125.64.16.10:9999/TWInterface/Service/AlipayCallBack/AliPayBuss.ashx"/>
+    <!-- 微信支付回调地址 -->
+    <add key="WechatPay_Notify_Url" value="http://125.64.16.10:9999/TWInterface/Service/WeiXinPayCallBack/WeiXinPay.ashx"/>
+    <add key="WechatPayPrec_Notify_Url" value="http://125.64.16.10:9999/TWInterface/Service/WeiXinPayCallBack/WeiXinPayPrec.ashx"/>
+    <add key="WechatPayBuss_Notify_Url" value="http://125.64.16.10:9999/TWInterface/Service/WeiXinPayCallBack/WeiXinPayBuss.ashx"/>
+   
+    <!-- 鸿坤报表环境 -->
+    <add key="HongKunReportEnvironment" value="0"/>
+  </appSettings>
+  <!--
+    有关 web.config 更改的说明，请参见 http://go.microsoft.com/fwlink/?LinkId=235367。
+
+    可在 <httpRuntime> 标记上设置以下特性。
+      <system.Web>
+        <httpRuntime targetFramework="4.5.1" />
+      </system.Web>
+  -->
+  <system.web>
+    <compilation debug="true" targetFramework="4.6"/>
+    <!-- 配置请求参数的长度 -->
+    <httpRuntime requestValidationMode="2.0" maxQueryStringLength="2097151" requestPathInvalidCharacters="" maxRequestLength="1048576" executionTimeout="3600"/>
+    <pages validateRequest="false"/>
+  </system.web>
+  <system.webServer>
+    <security>
+      <requestFiltering>
+        <!-- 配置请求参数的长度 -->
+        <requestLimits maxQueryString="50000"/>
+      </requestFiltering>
+    </security>
+    <directoryBrowse enabled="true"/>
+  </system.webServer>
+  <connectionStrings>-
+    <add name="10Connection" connectionString="Max Pool Size=2048;Min Pool Size=0;Pooling=true;Data Source=192.168.8.184,8433;Initial Catalog=tw2_bs;User ID=LFUser;Password=LF123SPoss"/>
+
+    <add name="tw2bsConnectionString" connectionString="Max Pool Size=2048;Min Pool Size=0;Pooling=true;Data Source=192.168.8.184,8433;Initial Catalog=tw2_bs;User ID=LFUser;Password=LF123SPoss"/>
+
+    <add name="SQLTW2BSConnection" connectionString="Max Pool Size=2048;Min Pool Size=0;Pooling=true;Data Source=192.168.8.184,8433;Initial Catalog=tw2_bs;User ID=LFUser;Password=LF123SPoss"/>
+    <add name="SQLConnection" connectionString="Max Pool Size=2048;Min Pool Size=0;Pooling=true;Data Source=192.168.8.184,8433;Initial Catalog=tw2_bs;User ID=LFUser;Password=LF123SPoss"/>
+    
+    <add name="BusinessContionString" connectionString="Max Pool Size=2048;Min Pool Size=0;Pooling=true;Data Source=192.168.8.184,8433;Initial Catalog=BussinessDb;User ID=LFUser;Password=LF123SPoss"/>
+    <add name="UnifiedConnectionString" connectionString="Max Pool Size=2048;Min Pool Size=0;Pooling=true;Data Source=192.168.8.184,8433;Initial Catalog=Unified;User ID=LFUser;Password=LF123SPoss"/>
+  </connectionStrings>
+  <runtime>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="Microsoft.Vbe.Interop" publicKeyToken="71e9bce111e9429c" culture="neutral"/>
+        <bindingRedirect oldVersion="0.0.0.0-14.0.0.0" newVersion="14.0.0.0"/>
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="Newtonsoft.Json" publicKeyToken="30ad4fe6b2a6aeed" culture="neutral"/>
+        <bindingRedirect oldVersion="0.0.0.0-11.0.0.0" newVersion="11.0.0.0"/>
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="log4net" publicKeyToken="669e0ddf0bb1aa2a" culture="neutral"/>
+        <bindingRedirect oldVersion="0.0.0.0-2.0.8.0" newVersion="2.0.8.0"/>
+      </dependentAssembly>
+    </assemblyBinding>
+  </runtime>
+</configuration>
